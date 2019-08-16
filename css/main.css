@@ -92,6 +92,7 @@
   color: #fff;
   font-size: 65px;
   margin: 0;
+  font-family: 'lifehackmedium';
 }
 
 .nav {
@@ -132,6 +133,7 @@
   margin-top: 11%;
   font-size: 72px;
   text-transform: uppercase;
+  font-family: 'gagalinregular';
 }
 
 .natural__region {
@@ -159,11 +161,15 @@
 
 .natural__min-title {
   font-size: 24px;
+  font-family: 'lifehackmedium';
 }
 
 .natural__text {
   margin-top: 20px;
   line-height: 1.5;
+  font-family: 'ubuntulight';
+  font-size: 14px;
+  color: #6d6e6e;
 }
 
 .natural__text_three {
@@ -179,7 +185,11 @@
 }
 
 .reviews__block {
-  display: block;
   width: 25%;
+}
+
+.reviews__img {
+  display: block;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
