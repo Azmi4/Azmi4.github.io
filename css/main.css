@@ -85,7 +85,7 @@
 }
 
 .burger__text {
-  margin-top: 12%;
+  margin: 12% 0 0 15px;
 }
 
 .burger__text p {
@@ -191,5 +191,9 @@
 .reviews__img {
   display: block;
   width: 100%;
+}
+
+.reviews__block {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
