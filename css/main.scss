@@ -22,9 +22,11 @@
 
 
 
+
 .logo {
     margin: 12px 0 0 83px;
 }
+
 
 
 
@@ -50,13 +52,19 @@
 
 
 
+
 .button {
-    background-color: #e45028;
-    border: none;
     width: 100px;
     height: 35px;
     border-radius: 6px;
+    border: none;
     margin: 28px 0 0 17px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e45028;
 }
 
 .button__text {
@@ -178,6 +186,7 @@
 
 
 
+
 .section__reviews {
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +194,7 @@
 
 .reviews__block {
     width: 25%;
+    position: relative;
 }
 
 .reviews__img {
@@ -192,10 +202,45 @@
     width: 100%;
 }
 
-.reviews__block {
-    position: relative;
+.reviews__block-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+    width: 230px;
+    opacity: 0;
+    transition: opacity .6s;
 }
 
-.reviews__block-hover {
-    // position: absolute;
+.reviews__block:hover .reviews__block-hover {
+    opacity: 1;
+}
+
+.reviews__min-title {
+    font-family: 'gagalinregular';
+    font-size: 14px;
+    color: #d2d2d2;
+    letter-spacing: 1px;
+}
+
+.reviews__block-hover p {
+    font-family: 'ubuntulight';
+    color: #cdcdcd;
+    line-height: 1.6;
+}
+
+.reviews__button {
+    background: #2f3234;
+    border: none;
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button__text {
+    font-family: 'ubuntumedium';
+    font-size: 13px;
 }
