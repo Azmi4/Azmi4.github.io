@@ -1,0 +1,38 @@
+.hero {
+    background: url('../../image/bg/Rectangle11.jpg') no-repeat center center / cover;
+    position: relative;
+}
+
+.hero__container {
+    height: 100%;
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    margin-left: 54px;
+}
+
+.hero__content-pic {
+    position: relative;
+}
+
+.hero__drops-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-54%, -61%);
+}
+
+.hero__desc {
+    margin-top: 70px;
+    margin-left: 12px;
+}
+
+.hero__subtitle {
+    font-size: 65px;
+    font-family: 'lifehackmedium';
+    color: #fff;
+    line-height: 1;
+    margin-top: 20px;
+}

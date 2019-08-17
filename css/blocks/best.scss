@@ -1,0 +1,41 @@
+.best {
+    background: url('../../image/bg/bg.jpg') center center / cover no-repeat;
+    height: 651px;
+}
+
+.best__list {
+    display: flex;
+    margin-top: 54px;
+}
+
+.best__item {
+    flex: 1;
+    text-align: center;
+    margin-right: 35px;
+    width: 295px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.best__desc {
+    margin-top: 20px;
+    &_three {
+        margin-top: 30px;
+    }
+}
+
+.best__title {
+    font-size: 24px;
+    font-family: 'lifehackmedium';
+    
+}
+
+.best__desc-text {
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 15px;
+    color: #585a5a;
+}

@@ -1,0 +1,12 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'ubuntulight';
+    font-size: 14px;
+}
+
+.contacts__phone {
+    font-family: 'ubuntubold';
+    color: $orange;
+}
