@@ -623,7 +623,8 @@ button {
 
 .reviews__title {
   font-family: 'gagalinregular';
-  color: #fff; }
+  color: #fff;
+  letter-spacing: 1px; }
 
 .reviews__text {
   color: #e4e4e4;
