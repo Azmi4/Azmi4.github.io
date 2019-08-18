@@ -1,6 +1,5 @@
 .best {
     background: url('../../image/bg/bg.jpg') center center / cover no-repeat;
-    height: 651px;
 }
 
 .best__list {
@@ -17,6 +16,10 @@
     &:last-child {
         margin-right: 0;
     }
+}
+
+.best__pic {
+    max-width: 100%;
 }
 
 .best__desc {

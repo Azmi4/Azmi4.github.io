@@ -358,6 +358,9 @@ body {
 .container {
   width: 940px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -433,9 +436,13 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 54px; }
+  margin-left: 54px;
+  -webkit-box-flex: 8;
+  -ms-flex: 8;
+  flex: 8; }
 
 .hero__content-pic {
+  max-width: 100%;
   position: relative; }
 
 .hero__drops-img {
@@ -470,6 +477,9 @@ button {
   font-size: 13px;
   font-family: 'ubuntumedium';
   padding-top: 7px; }
+
+.header__logo {
+  max-width: 100%; }
 
 .header__buttons {
   display: -webkit-box;
@@ -552,8 +562,7 @@ button {
     text-align: center; }
 
 .best {
-  background: url("../../image/bg/bg.jpg") center center/cover no-repeat;
-  height: 651px; }
+  background: url("../../image/bg/bg.jpg") center center/cover no-repeat; }
 
 .best__list {
   display: -webkit-box;
@@ -570,6 +579,9 @@ button {
   width: 295px; }
   .best__item:last-child {
     margin-right: 0; }
+
+.best__pic {
+  max-width: 100%; }
 
 .best__desc {
   margin-top: 20px; }
@@ -605,7 +617,9 @@ button {
 .reviews__img {
   display: block;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .reviews__hover {
   position: absolute;
