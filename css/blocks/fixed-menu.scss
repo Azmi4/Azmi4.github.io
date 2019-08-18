@@ -8,6 +8,7 @@
     &_active {
         .fixed-menu__dot {
             border-color: white;
+            box-shadow: 0 0 6px #000;
         }
     }
 }
@@ -30,6 +31,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        box-shadow: 0 0 6px #000;
     }
 
     &:nth-last-child(9) {

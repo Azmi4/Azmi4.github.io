@@ -639,7 +639,9 @@ button {
   right: 53px; }
 
 .fixed-menu__item_active .fixed-menu__dot {
-  border-color: white; }
+  border-color: white;
+  -webkit-box-shadow: 0 0 6px #000;
+  box-shadow: 0 0 6px #000; }
 
 .fixed-menu__dot {
   width: 16px;
@@ -659,7 +661,9 @@ button {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0 0 6px #000;
+    box-shadow: 0 0 6px #000; }
   .fixed-menu__dot:nth-last-child(9) {
     margin-top: 0; }
 
@@ -678,6 +682,25 @@ button {
   font-family: 'ubuntulight';
   font-size: 14px; }
 
+.contacts__mine {
+  margin-top: 10px; }
+
 .contacts__phone {
+  margin-top: 10px; }
+
+.contacts__phone-link {
   font-family: 'ubuntubold';
-  color: #e45028; }
+  color: #e45028;
+  text-decoration: none; }
+  .contacts__phone-link:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 11px;
+    background-image: url("../../image/phone.png");
+    background: center center no-repeat; }
+
+.contacts__phone-link_icon:before {
+  background-image: url("../../image/phone.png");
+  margin: 0 10px 7px 0; }

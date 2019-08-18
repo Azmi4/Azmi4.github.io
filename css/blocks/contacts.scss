@@ -6,7 +6,33 @@
     font-size: 14px;
 }
 
+.contacts__mine {
+    margin-top: 10px;
+}
+
 .contacts__phone {
+    margin-top: 10px;
+}
+
+.contacts__phone-link {
     font-family: 'ubuntubold';
     color: $orange;
+    text-decoration: none;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 12px;
+        height: 11px;
+        background-image: url('../../image/phone.png');
+        background: center center no-repeat;
+    }
+}
+
+.contacts__phone-link_icon {
+    &:before {
+        background-image: url('../../image/phone.png');
+        margin: 0 10px 7px 0;
+    }
 }
