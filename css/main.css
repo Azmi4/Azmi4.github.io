@@ -818,3 +818,18 @@ button {
   .form__input_textarea {
     resize: none;
     height: 110px; }
+
+.form__checkbox {
+  display: block;
+  cursor: pointer; }
+
+.checkbox {
+  display: none; }
+
+.form__checkbox span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  margin-right: 7px;
+  border-radius: 3px; }
