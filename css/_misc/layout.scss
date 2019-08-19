@@ -21,8 +21,12 @@ body {
   display: flex;
   flex-direction: column;
 
-  &_pp {
+  &_best {
     padding-bottom: 29px;
+  }
+
+  &_order {
+    padding-bottom: 20px;
   }
 }
 
