@@ -842,7 +842,7 @@ button {
     width: 100%;
     top: 0;
     left: 0;
-    background-image: url("../../image/checkmark2.png");
+    background: url("../../image/checkmark2.png") center center no-repeat;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0); }
