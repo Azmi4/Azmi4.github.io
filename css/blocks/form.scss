@@ -1,5 +1,7 @@
 .form__elem {
     display: flex;
+    font-family: 'ubuntulight';
+    font-size: 14px;
 }
 
 .form__column {
@@ -24,6 +26,14 @@
     &:last-child {
         margin-right: 0;
     }
+}
+
+.form__block-title {
+    margin-bottom: 5px;
+}
+
+.form__radio {
+    margin-right: 20px;
 }
 
 .form__input {
