@@ -1,0 +1,48 @@
+.accordeon {
+    font-size: 14px;
+    color: #fff;
+}
+
+.accordeon__block {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+}
+
+.accordeon__item {
+    margin-bottom: 35px;
+}
+
+.accordeon__item_active {
+
+    .accordeon__title {
+        color: $yellow;
+    }
+
+    .accordeon__block {
+        height: auto;
+    }
+}
+
+.accordeon__title {
+    font-family: 'gagalinregular';
+    margin-bottom: 15px;
+}
+
+.accordeon__photo {
+    background: url('../../image/photo1.jpg') center no-repeat / cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+
+.accordeon__desc {
+    font-family: 'ubuntulight';
+    margin-left: 20px;
+}
+
+.accordeon__subtitle {
+    font-family: 'ubuntubold';
+    margin-bottom: 20px;
+}
