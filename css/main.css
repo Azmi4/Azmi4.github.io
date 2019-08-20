@@ -442,26 +442,20 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 54px;
-  -webkit-box-flex: .8;
-  -ms-flex: .8;
-  flex: .8; }
+  -webkit-box-flex: .7;
+  -ms-flex: .7;
+  flex: .7;
+  margin-left: 20px; }
 
 .hero__content-pic {
-  max-width: 120%;
-  position: relative; }
-
-.hero__drops-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-54%, -61%);
-  -ms-transform: translate(-54%, -61%);
-  transform: translate(-54%, -61%); }
+  max-width: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
 
 .hero__desc {
-  margin-top: 70px;
-  margin-left: 12px; }
+  margin-top: 65px;
+  margin-left: 15px; }
 
 .hero__subtitle {
   font-size: 65px;
@@ -765,6 +759,20 @@ button {
 .form__block-title {
   margin-bottom: 5px; }
 
+.form__input {
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 21px;
+  width: 100%;
+  border: 1px solid transparent;
+  outline: none; }
+  .form__input:focus {
+    border-color: #f9b43b; }
+  .form__input_textarea {
+    resize: none;
+    height: 110px; }
+
 .form__radio {
   margin-right: 20px;
   padding-left: 25px;
@@ -796,32 +804,21 @@ button {
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-    -webkit-transition: 300ms ease-in-out 0s;
-    -o-transition: 300ms ease-in-out 0s;
-    transition: 300ms ease-in-out 0s; }
+    -webkit-transition: 200ms ease-in-out 0s;
+    -o-transition: 200ms ease-in-out 0s;
+    transition: 200ms ease-in-out 0s; }
 
 .form__radio input[type="radio"]:checked ~ span:after {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
 
-.form__input {
-  background: #fff;
-  border-radius: 4px;
-  border: none;
-  padding: 10px 21px;
-  width: 100%;
-  border: 1px solid transparent;
-  outline: none; }
-  .form__input:focus {
-    border-color: #f9b43b; }
-  .form__input_textarea {
-    resize: none;
-    height: 110px; }
-
 .form__checkbox {
   display: block;
-  cursor: pointer; }
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .form__checkbox input[type="checkbox"] {
   display: none; }
@@ -831,7 +828,7 @@ button {
   height: 15px;
   width: 15px;
   background: #fff;
-  margin-right: 7px;
+  margin-right: 10px;
   border-radius: 3px;
   position: relative; }
   .form__checkbox span::before {
@@ -851,3 +848,6 @@ button {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
+
+.comanda {
+  background: url("../../image/bg/comanda.jpg") center top no-repeat/cover; }
