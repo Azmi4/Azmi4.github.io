@@ -10,10 +10,11 @@
 }
 
 .accordeon__item {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .accordeon__item_active {
+    margin-bottom: 40px;
 
     .accordeon__title {
         color: $yellow;
@@ -40,9 +41,14 @@
 .accordeon__desc {
     font-family: 'ubuntulight';
     margin-left: 20px;
+    
 }
 
 .accordeon__subtitle {
     font-family: 'ubuntubold';
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.accordeon__text {
+    line-height: 1.7;
 }
