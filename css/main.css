@@ -479,7 +479,8 @@ button {
   padding-top: 7px; }
 
 .header__logo {
-  max-width: 100%; }
+  width: 100px;
+  height: 80px; }
 
 .header__buttons {
   display: -webkit-box;
