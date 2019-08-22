@@ -1,13 +1,18 @@
 .contacts {
-    display: flex;
-    justify-content: space-between;
     color: #fff;
-    font-family: 'ubuntulight';
     font-size: 14px;
+    font-family: 'ubuntulight';
+    display: flex;
+    padding: 10px;
 }
 
 .contacts__mine {
-    margin-top: 10px;
+    flex: 1;
+
+}
+
+.contacts__address {
+    font-style: normal;
 }
 
 .contacts__phone {
@@ -15,24 +20,13 @@
 }
 
 .contacts__phone-link {
-    font-family: 'ubuntubold';
-    color: $orange;
     text-decoration: none;
-
-    &:before {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        width: 12px;
-        height: 11px;
-        background-image: url('../../image/phone.png');
-        background: center center no-repeat;
-    }
+    color: $orange;
+    font-family: 'ubuntubold';
 }
 
-.contacts__phone-link_icon {
-    &:before {
-        background-image: url('../../image/phone.png');
-        margin: 0 10px 7px 0;
-    }
+.contacts__phone-icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
 }

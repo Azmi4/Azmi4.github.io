@@ -2,6 +2,7 @@
     $orange: #e45028;
     $yellow: #f9b43b;
     $black: #2f3234;
+    $grey: #5a5a5a;
 
     // normalize
     @import "_misc/normalize.scss";
@@ -27,6 +28,9 @@
     @import "blocks/form.scss";
     @import "blocks/team.scss";
     @import "blocks/accordeon.scss";
+    @import "blocks/menu.scss";
+    @import "blocks/maps.scss";
+    @import "blocks/social-networks.scss";
 
 
 

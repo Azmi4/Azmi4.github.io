@@ -1,0 +1,59 @@
+.social__networks {
+    flex: 1;
+}
+
+.social__list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 80px;
+}
+
+.social__item {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social__vk {
+    width: 20px;
+    height: 20px;
+    fill: $grey;
+
+    &:hover {
+        fill: white;
+        transition: .3s;
+    }
+}
+
+.social__fb {
+    width: 16px;
+    height: 16px;
+    fill: $grey;
+
+    &:hover {
+        fill: white;
+        transition: .3s;
+    }
+}
+
+.social__inst {
+    width: 16px;
+    height: 16px;
+    fill: $grey;
+
+    &:hover {
+        fill: white;
+        transition: .3s;
+    }
+}
+
+.social__twit {
+    width: 18px;
+    height: 18px;
+    fill: $grey;
+
+    &:hover {
+        fill: white;
+        transition: .3s;
+    }
+}

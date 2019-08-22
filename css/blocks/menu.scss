@@ -1,0 +1,56 @@
+.menu {
+    background: url('../../image/bg/Rectangle\ 4.jpg') center center no-repeat / cover;
+    position: relative;
+    color: #fff;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    &_one {
+        background: url('../../image/bg/photo-one.jpg') center center no-repeat / cover;
+    }
+
+    &_two {
+        background: url('../../image/bg/photo-two.jpg') right center no-repeat / cover;
+    }
+
+    &_three {
+        background: url('../../image/bg/photo-thee.jpg') right center no-repeat / cover;
+    }
+}
+
+.menu__item_active {
+    width: auto;
+
+    .menu__text {
+        width: 600px;
+        padding: 60px 40px;
+        line-height: 1.7;
+    }
+}
+
+.menu__title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 40px;
+    font-family: 'gagalinregular';
+    width: 80px;
+    display: flex;
+    align-items: center;
+    background: rgba(#4c4e50, .6);
+}
+
+.menu__subtitle {
+    margin-top: 40px;
+}
+
+.menu__text {
+    width: 0;
+    overflow: hidden;
+    background: rgba(#4c4e50, .8);
+    font-family: 'ubuntulight';
+    font-size: 14px;
+}
