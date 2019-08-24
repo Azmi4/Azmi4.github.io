@@ -1,10 +1,10 @@
 .hero {
     background: url('../../image/bg/Rectangle11.jpg') no-repeat center center / cover;
     position: relative;
+    height: 100%;
 }
 
 .hero__container {
-    height: 100%;
     padding-bottom: 15%;
 }
 
@@ -17,8 +17,10 @@
     @include tablets {
         flex-direction: column;
         margin-left: 0;
+        margin-top: 9%;
         text-align: center;
-        padding: 0 10%;
+        padding: 0 10%; 
+        padding-bottom: 13%;
     }
 }
 
@@ -32,6 +34,7 @@
     margin-left: rem(15px);
 
     @include tablets {
+        margin-top: 35px;
         margin-left: 0;
     }
 }
@@ -42,4 +45,8 @@
     color: #fff;
     line-height: 1;
     margin-top: rem(20px);
+
+    @include tablets {
+        margin-top: 30px;
+    }
 }

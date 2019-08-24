@@ -1,6 +1,6 @@
 .hamburger-menu {
     width: rem(25px);
-    height: rem(22px);
+    height: rem(27px);
     position: relative;
     margin-left: rem(30px);
     display: none;
@@ -13,9 +13,8 @@
 .hamburger-menu span {
     position: absolute;
     top: 50%;
-    margin-top: rem(-2px);
     width: 100%;
-    height: rem(4px);
+    height: rem(5px);
     background-color: white;
     border-radius: rem(2px);
 
@@ -25,19 +24,19 @@
         top: 50%;
         margin-top: rem(-2px);
         width: 100%;
-        height: rem(4px);
+        height: rem(5px);
         background-color: white;
         border-radius: rem(2px);
-        margin-top: rem(6px);
+        margin-top: rem(7px);
     }
 
     &:after {
         content: "";
         position: absolute;
         top: 50%;
-        margin-top: rem(-9px);
+        margin-top: rem(-12px);
         width: 100%;
-        height: rem(4px);
+        height: rem(5px);
         background-color: white;
         border-radius: rem(5px);
     }

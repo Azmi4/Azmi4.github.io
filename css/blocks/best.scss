@@ -1,10 +1,15 @@
 .best {
     background: url('../../image/bg/bg.jpg') center center / cover no-repeat;
+    height: auto;
 }
 
 .best__list {
     display: flex;
     margin-top: rem(54px);
+
+    @include tablets {
+        margin-top: 70px;
+    }
 }
 
 .best__item {

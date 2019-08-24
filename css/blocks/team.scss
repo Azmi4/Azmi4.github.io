@@ -9,11 +9,16 @@
 }
 
 .team__block {
-    width: rem(540px);
+    // width: rem(540px);
     height: 100%;
     background: rgba(#323436, .9);
     position: absolute;
     top: 0;
     left: 60%;
     padding: rem(110px) rem(95px);
+
+    @include tablets {
+        left: 0;
+        right: 0;
+    }
 }
