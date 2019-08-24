@@ -5,13 +5,21 @@
 
 .hero__container {
     height: 100%;
+    padding-bottom: 15%;
 }
 
 .hero__content {
     display: flex;
     align-items: center;
     flex: .7;
-    margin-left: 20px;
+    margin-left: rem(20px);
+
+    @include tablets {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+        padding: 0 10%;
+    }
 }
 
 .hero__content-pic {
@@ -20,14 +28,18 @@
 }
 
 .hero__desc {
-    margin-top: 65px;
-    margin-left: 15px;
+    margin-top: rem(65px);
+    margin-left: rem(15px);
+
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .hero__subtitle {
-    font-size: 65px;
+    font-size: rem(65px);
     font-family: 'lifehackmedium';
     color: #fff;
     line-height: 1;
-    margin-top: 20px;
+    margin-top: rem(20px);
 }

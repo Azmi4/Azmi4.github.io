@@ -5,18 +5,18 @@
 .social__list {
     display: flex;
     justify-content: flex-end;
-    padding: 10px 80px;
+    padding: rem(10px) rem(80px);
 }
 
 .social__item {
-    margin-left: 20px;
+    margin-left: rem(20px);
     display: flex;
     align-items: center;
 }
 
 .social__vk {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     fill: $grey;
 
     &:hover {
@@ -26,8 +26,8 @@
 }
 
 .social__fb {
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     fill: $grey;
 
     &:hover {
@@ -37,8 +37,8 @@
 }
 
 .social__inst {
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     fill: $grey;
 
     &:hover {
@@ -48,8 +48,8 @@
 }
 
 .social__twit {
-    width: 18px;
-    height: 18px;
+    width: rem(18px);
+    height: rem(18px);
     fill: $grey;
 
     &:hover {

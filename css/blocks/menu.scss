@@ -26,8 +26,8 @@
     width: auto;
 
     .menu__text {
-        width: 600px;
-        padding: 60px 40px;
+        width: rem(600px);
+        padding: rem(60px) rem(40px);
         line-height: 1.7;
     }
 }
@@ -35,16 +35,16 @@
 .menu__title {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-size: 40px;
+    font-size: rem(40px);
     font-family: 'gagalinregular';
-    width: 80px;
+    width: rem(80px);
     display: flex;
     align-items: center;
     background: rgba(#4c4e50, .6);
 }
 
 .menu__subtitle {
-    margin-top: 40px;
+    margin-top: rem(40px);
 }
 
 .menu__text {
@@ -52,5 +52,5 @@
     overflow: hidden;
     background: rgba(#4c4e50, .8);
     font-family: 'ubuntulight';
-    font-size: 14px;
+    font-size: rem(14px);
 }

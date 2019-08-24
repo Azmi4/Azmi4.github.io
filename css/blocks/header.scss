@@ -2,15 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: rem(13px);
     font-family: 'ubuntumedium';
-    padding-top: 10px;
+    padding-top: rem(10px);
 }
 
 .header__logo {
-    margin: 2px 0 0 3px;
-    width: 92px;
-    height: 69px;
+    margin: rem(2px) 0 0 rem(3px);
+    width: rem(92px);
+    height: rem(69px);
+    flex: 0 0 auto;
 }
 
 .header__buttons {

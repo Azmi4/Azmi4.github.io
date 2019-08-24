@@ -1,0 +1,44 @@
+.hamburger-menu {
+    width: rem(25px);
+    height: rem(22px);
+    position: relative;
+    margin-left: rem(30px);
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
+}
+
+.hamburger-menu span {
+    position: absolute;
+    top: 50%;
+    margin-top: rem(-2px);
+    width: 100%;
+    height: rem(4px);
+    background-color: white;
+    border-radius: rem(2px);
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: rem(-2px);
+        width: 100%;
+        height: rem(4px);
+        background-color: white;
+        border-radius: rem(2px);
+        margin-top: rem(6px);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: rem(-9px);
+        width: 100%;
+        height: rem(4px);
+        background-color: white;
+        border-radius: rem(5px);
+    }
+}

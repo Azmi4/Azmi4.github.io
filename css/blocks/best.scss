@@ -4,14 +4,14 @@
 
 .best__list {
     display: flex;
-    margin-top: 54px;
+    margin-top: rem(54px);
 }
 
 .best__item {
     flex: 1;
     text-align: center;
-    margin-right: 35px;
-    width: 295px;
+    margin-right: rem(35px);
+    width: rem(295px);
 
     &:last-child {
         margin-right: 0;
@@ -19,38 +19,38 @@
 }
 
 .best__pic-meat {
-    width: 96px;
-    height: 89px;
+    width: rem(96px);
+    height: rem(89px);
 }
 
 .best__pic-hand {
-    width: 73px;
-    height: 86px;
+    width: rem(73px);
+    height: rem(86px);
 }
 
 .best__pic-natural {
-    width: 88px;
-    height: 75px;
+    width: rem(88px);
+    height: rem(75px);
 }
 
 .best__desc {
-    margin-top: 20px;
+    margin-top: rem(20px);
     
     &_three {
-        margin-top: 30px;
+        margin-top: rem(30px);
     }
 }
 
 .best__title {
-    font-size: 24px;
+    font-size: rem(24px);
     font-family: 'lifehackmedium';
     
 }
 
 .best__desc-text {
     font-family: 'ubuntulight';
-    font-size: 14px;
+    font-size: rem(14px);
     line-height: 1.7;
-    margin-top: 15px;
+    margin-top: rem(15px);
     color: #585a5a;
 }

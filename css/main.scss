@@ -5,7 +5,10 @@
     $grey: #5a5a5a;
 
     // normalize
-    @import "_misc/normalize.scss";
+    @import "_misc/normalize";
+
+    // media
+    @import "_misc/media";
 
     // setups
     @import "_misc/fonts";
@@ -31,7 +34,9 @@
     @import "blocks/menu.scss";
     @import "blocks/maps.scss";
     @import "blocks/social-networks.scss";
+    @import "blocks/hamburger-menu.scss";
 
 
 
 
+// 

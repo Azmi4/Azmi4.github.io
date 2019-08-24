@@ -1,6 +1,6 @@
 .section {
     height: 100vh;
-    min-height: 648px;
+    min-height: rem(648px);
     display: flex;
     flex-direction: column;
     justify-content: center;
