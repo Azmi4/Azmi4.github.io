@@ -22,6 +22,11 @@
         padding: 0 10%; 
         padding-bottom: 13%;
     }
+
+    @include phones {
+        padding: 0 6% 12% 10%;
+        margin-top: 7%;
+    }
 }
 
 .hero__content-pic {
@@ -48,5 +53,10 @@
 
     @include tablets {
         margin-top: 30px;
+    }
+
+    @include phones {
+        font-size: rem(60px);
+        margin-top: rem(15px);
     }
 }

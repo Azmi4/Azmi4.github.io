@@ -22,12 +22,15 @@
         content: "";
         position: absolute;
         top: 50%;
-        margin-top: rem(-2px);
         width: 100%;
         height: rem(5px);
         background-color: white;
         border-radius: rem(2px);
         margin-top: rem(7px);
+
+        @include phones {
+            height: rem(4px);
+        }
     }
 
     &:after {

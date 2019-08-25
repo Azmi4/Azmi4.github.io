@@ -1,5 +1,9 @@
 .social__networks {
     flex: 1;
+
+    @include phones {
+        padding-top: 3%;
+    }
 }
 
 .social__list {
@@ -9,6 +13,10 @@
 
     @include tablets {
         padding-right: 2%;
+    }
+
+    @include phones {
+        padding: 0;
     }
 }
 
@@ -27,6 +35,11 @@
         fill: white;
         transition: .3s;
     }
+
+    @include phones {
+        width: rem(27px);
+        height: rem(27px);
+    }
 }
 
 .social__fb {
@@ -37,6 +50,11 @@
     &:hover {
         fill: white;
         transition: .3s;
+    }
+
+    @include phones {
+        width: rem(23px);
+        height: rem(23px);
     }
 }
 
@@ -49,6 +67,11 @@
         fill: white;
         transition: .3s;
     }
+
+    @include phones {
+        width: rem(23px);
+        height: rem(23px);
+    }
 }
 
 .social__twit {
@@ -59,5 +82,10 @@
     &:hover {
         fill: white;
         transition: .3s;
+    }
+
+    @include phones {
+        width: rem(23px);
+        height: rem(23px);
     }
 }

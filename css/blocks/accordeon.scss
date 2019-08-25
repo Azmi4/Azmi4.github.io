@@ -88,6 +88,11 @@
     height: rem(100px);
     border-radius: 50%;
     flex: 0 0 auto;
+
+    @include phones {
+        width: rem(120px);
+        height: rem(120px);
+    }
 }
 
 .accordeon__desc {
@@ -96,7 +101,11 @@
 
     @include tablets {
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: rem(20px);
+    }
+
+    @include phones {
+        margin-top: rem(20px);
     }
     
 }
@@ -104,6 +113,10 @@
 .accordeon__subtitle {
     font-family: 'ubuntubold';
     margin-bottom: rem(15px);
+
+    @include phones {
+        font-size: rem(16px);
+    }
 }
 
 .accordeon__text {
@@ -111,5 +124,9 @@
 
     @include tablets {
         width: 340px;
+    }
+
+    @include phones {
+        font-size: rem(16px);
     }
 }

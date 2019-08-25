@@ -67,14 +67,14 @@
 
         <section class="section best">
             <div class="container container_best">
-                <h2 class="title title_color_black title_centered">Мы лучшие</h2>
+                <h2 class="title best__title title_color_black title_centered">Мы лучшие</h2>
                 <ul class="best__list">
                     <li class="best__item">
                         <svg class="best__pic-meat">
                             <use xlink:href="./image/svg-sprite/sprite.svg#meat"></use>
                         </svg>
                         <div class="best__desc">
-                            <div class="best__title">100% Свежее мясо</div>
+                            <div class="best__subtitle">100% Свежее мясо</div>
                             <div class="best__desc-text">
                                 <p>
                                     Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
@@ -83,12 +83,12 @@
                             </div>
                         </div>
                     </li>
-                    <li class="best__item">
+                    <li class="best__item best__item_hand">
                         <svg class="best__pic-hand">
                             <use xlink:href="./image/svg-sprite/sprite.svg#hand"></use>
                         </svg>
                         <div class="best__desc">
-                            <div class="best__title">Ручная сборка</div>
+                            <div class="best__subtitle">Ручная сборка</div>
                             <div class="best__desc-text">
                                 <p>
                                     Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
@@ -102,7 +102,7 @@
                             <use xlink:href="./image/svg-sprite/sprite.svg#natural"></use>
                         </svg>
                         <div class="best__desc best__desc_three">
-                            <div class="best__title">Натуральные инградиенты</div>
+                            <div class="best__subtitle">Натуральные инградиенты</div>
                             <div class="best__desc-text">
                                 <p>
                                     Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
@@ -315,7 +315,7 @@
                 <li class="reviews__item">
                     <img src="./image/pic-six.jpg" alt="" class="reviews__img">
                     <div class="reviews__hover">
-                        <div class="reviews__title">Носорог Носорогва</div>
+                        <div class="reviews__title">Носорог Носорогова</div>
                         <div class="reviews__text">
                             <p>
                                 Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не
@@ -359,7 +359,7 @@
 
         <section class="section order">
             <div class="container container_order">
-                <h2 class="title title_centered">Закажите доставку</h2>
+                <h2 class="title title__order title_centered">Закажите доставку</h2>
                 <div class="form">
                     <form action="" class="form__elem">
                         <div class="form__column">
@@ -388,11 +388,11 @@
                                     <div class="form__block-title">Корпус</div>
                                     <input type="text" class="form__input">
                                 </label>
-                                <label class="form__block">
+                                <label class="form__block form__block_margin-on-mobile">
                                     <div class="form__block-title">Квартира</div>
                                     <input type="text" class="form__input">
                                 </label>
-                                <label class="form__block">
+                                <label class="form__block form__block_hidden-on-mobile">
                                     <div class="form__block-title">Этаж</div>
                                     <input type="text" class="form__input">
                                 </label>
@@ -405,24 +405,28 @@
                                     <textarea class="form__input form__input_textarea"></textarea>
                                 </label>
                             </div>
-                            <div class="form__row form__row_pp">
-                                <label class="form__radio">
-                                    <input name="question" type="radio">Потребуется сдача
-                                    <span></span>
-                                </label>
-                                <label class="form__radio">
-                                    <input name="question" type="radio" checked>Оплата по карте
-                                    <span></span>
-                                </label>
+                            <div class="form__row-block">
+                                <div class="form__row form__row_pp">
+                                    <label class="form__radio">
+                                        <input name="question" type="radio">Потребуется сдача
+                                        <span></span>
+                                    </label>
+                                    <label class="form__radio">
+                                        <input name="question" type="radio" checked>Оплата по карте
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <div class="form__row form__row_pp">
+                                    <label class="form__checkbox">
+                                        <input type="checkbox">
+                                        <span></span>Не перезванивать
+                                    </label>
+                                </div>
+                                <div class="form__button">
+                                    <button type="submit" class="btn">Заказать</button>
+                                    <button type="reset">Очистить</button>
+                                </div>
                             </div>
-                            <div class="form__row form__row_pp">
-                                <label class="form__checkbox">
-                                    <input type="checkbox">
-                                    <span></span>Не перезванивать
-                                </label>
-                            </div>
-                            <button type="submit" class="btn">Заказать</button>
-                            <button type="reset">Очистить</button>
                         </div>
                     </form>
                 </div>

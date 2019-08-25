@@ -2,7 +2,11 @@
     margin-top: rem(48px);
 
     @include tablets {
-        margin-top: 50px;   
+        margin-top: rem(50px);   
+    }
+
+    @include phones {
+        margin-top: rem(43px);
     }
 }
 
@@ -14,6 +18,11 @@
     @include tablets {
         flex-direction: column;
         padding: 0 17%;   
+    }
+
+    @include phones {
+        padding: 0;
+        font-size: rem(17px);
     }
 }
 
@@ -30,6 +39,15 @@
     }
 }
 
+.form__row-block {
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .form__row {
     display: flex;
     margin-bottom: rem(18px);
@@ -38,6 +56,10 @@
         @include tablets {
             margin-bottom: 7%;
         }
+    }
+
+    @include phones {
+        margin-bottom: 6%;        
     }
 }
 
@@ -48,6 +70,18 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &_margin-on-mobile {
+        @include phones {
+            margin-right: 0;
+        }
+    }
+
+    &_hidden-on-mobile {
+        @include phones {
+            display: none;
+        }
     }
 }
 

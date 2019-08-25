@@ -7,6 +7,10 @@
     @include tablets {
         padding-bottom: 113%;
     }
+
+    @include phones {
+        padding-bottom: 151%;
+    }
 }
 
 .menu__item {
@@ -30,6 +34,10 @@
 .menu__item_active {
     width: auto;
 
+    @include phones {
+        width: 116%;
+    }
+
     .menu__text {
         width: rem(600px);
         padding: rem(60px) rem(40px);
@@ -42,14 +50,22 @@
     transform: rotate(180deg);
     font-size: rem(40px);
     font-family: 'gagalinregular';
-    width: rem(80px);
+    min-width: rem(80px);
     display: flex;
     align-items: center;
     background: rgba(#4c4e50, .6);
+
+    @include phones {
+        min-width: rem(50px);
+    }
 }
 
 .menu__subtitle {
     margin-top: rem(40px);
+    
+    @include phones {
+        font-size: rem(30px); 
+    }
 }
 
 .menu__text {

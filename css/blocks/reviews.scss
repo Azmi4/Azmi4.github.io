@@ -2,6 +2,10 @@
     @include tablets {
         height: 164vh;
     }
+
+    @include phones {
+        height: 128vh;
+    }
 }
 
 .reviews__list {
@@ -45,12 +49,29 @@
     background: rgba(#444646, .5);
     opacity: 0;
     transition: opacity .4s;
+
+    @include tablets {
+        text-align: center;
+    }
+
+    @include phones {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .reviews__title {
     font-family: 'gagalinregular';
     color: #fff;
     letter-spacing: rem(1px);
+    
+    @include phones {
+        font-size: rem(27px);
+        padding-bottom: 15%;
+    }
 }
 
 .reviews__text {
@@ -59,4 +80,12 @@
     line-height: 1.7;
     margin-top: rem(30px);
     margin-bottom: rem(15px);
+
+    @include tablets {
+        margin-top: 5%;
+    }
+
+    @include phones {
+        display: none;
+    }
 }

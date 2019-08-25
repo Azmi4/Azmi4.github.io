@@ -5,4 +5,8 @@
     @include tablets {
         height: 163vh;
     }
+
+    @include phones {
+        height: 128vh;
+    }
 }

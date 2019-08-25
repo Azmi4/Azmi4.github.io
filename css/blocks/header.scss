@@ -12,6 +12,12 @@
     width: rem(92px);
     height: rem(69px);
     flex: 0 0 auto;
+
+    @include phones {
+        width: rem(103px);
+        height: rem(80px);
+        margin: rem(3px) 0 0 rem(8px);
+    }
 }
 
 .header__buttons {

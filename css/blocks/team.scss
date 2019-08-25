@@ -12,7 +12,7 @@
     position: relative;
 
     @include tablets {
-        padding-top: 136%;
+        padding-top: 173%;
     }
 }
 
@@ -33,5 +33,10 @@
         flex-direction: column;
         padding: 0;
         padding-bottom: 5%;
+    }
+
+    @include phones {
+        padding-left: 5%;
+        padding-top: 7%;
     }
 }

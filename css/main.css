@@ -381,13 +381,20 @@ body {
     @media screen and (max-width: 768px) {
       .container_best {
         padding-top: 30%;
-        padding-bottom: 53%; } }
+        padding-bottom: 44%; } }
+    @media screen and (max-width: 480px) {
+      .container_best {
+        padding-top: 21%; } }
   .container_order {
     padding-bottom: 20px; }
     @media screen and (max-width: 768px) {
       .container_order {
         padding-top: 20%;
         padding-bottom: 34%; } }
+    @media screen and (max-width: 480px) {
+      .container_order {
+        padding-top: 14%;
+        padding-bottom: 16%; } }
 
 h1,
 h2,
@@ -477,6 +484,10 @@ button {
       text-align: center;
       padding: 0 10%;
       padding-bottom: 13%; } }
+  @media screen and (max-width: 480px) {
+    .hero__content {
+      padding: 0 6% 12% 10%;
+      margin-top: 7%; } }
 
 .hero__content-pic {
   max-width: 100%;
@@ -501,6 +512,10 @@ button {
   @media screen and (max-width: 768px) {
     .hero__subtitle {
       margin-top: 30px; } }
+  @media screen and (max-width: 480px) {
+    .hero__subtitle {
+      font-size: 3.75rem;
+      margin-top: 0.9375rem; } }
 
 .header {
   display: -webkit-box;
@@ -523,6 +538,11 @@ button {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto; }
+  @media screen and (max-width: 480px) {
+    .header__logo {
+      width: 6.4375rem;
+      height: 5rem;
+      margin: 0.1875rem 0 0 0.5rem; } }
 
 .header__buttons {
   display: -webkit-box;
@@ -580,6 +600,9 @@ button {
   color: #fff;
   font-size: 0.8125rem;
   font-family: 'ubuntumedium'; }
+  @media screen and (max-width: 480px) {
+    .btn {
+      padding: 0.75rem 1.25rem; } }
   .btn_color_black {
     background: #2f3234; }
 
@@ -616,6 +639,10 @@ button {
     text-align: center; }
   .title_team {
     margin-bottom: 3.125rem; }
+    @media screen and (max-width: 480px) {
+      .title_team {
+        margin-bottom: 2.0625rem;
+        font-size: 3.625rem; } }
 
 .title__menu {
   margin: 7.7% 0 0 16.5%; }
@@ -623,10 +650,23 @@ button {
     .title__menu {
       margin-left: 3%;
       margin-top: 14%; } }
+  @media screen and (max-width: 480px) {
+    .title__menu {
+      font-size: 3.3125rem;
+      margin-left: 14%;
+      margin-top: 12%; } }
+
+@media screen and (max-width: 480px) {
+  .title__order {
+    font-size: 3.6875rem; } }
 
 .best {
   background: url("../../image/bg/bg.jpg") center center/cover no-repeat;
   height: auto; }
+
+@media screen and (max-width: 480px) {
+  .best__title {
+    font-size: 3.5625rem; } }
 
 .best__list {
   display: -webkit-box;
@@ -636,6 +676,14 @@ button {
   @media screen and (max-width: 768px) {
     .best__list {
       margin-top: 70px; } }
+  @media screen and (max-width: 480px) {
+    .best__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-top: 1.25rem;
+      margin-left: 0.625rem; } }
 
 .best__item {
   -webkit-box-flex: 1;
@@ -644,29 +692,62 @@ button {
   text-align: center;
   margin-right: 2.1875rem;
   width: 18.4375rem; }
+  @media screen and (max-width: 480px) {
+    .best__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: 0;
+      width: auto; } }
+  @media screen and (max-width: 480px) {
+    .best__item_hand {
+      margin-top: 7%;
+      margin-left: 2%; } }
   .best__item:last-child {
     margin-right: 0; }
 
 .best__pic-meat {
   width: 6rem;
   height: 5.5625rem; }
+  @media screen and (max-width: 480px) {
+    .best__pic-meat {
+      width: 15rem;
+      height: 8.75rem; } }
 
 .best__pic-hand {
   width: 4.5625rem;
   height: 5.375rem; }
+  @media screen and (max-width: 480px) {
+    .best__pic-hand {
+      width: 16.25rem;
+      height: 8.75rem; } }
 
 .best__pic-natural {
   width: 5.5rem;
   height: 4.6875rem; }
+  @media screen and (max-width: 480px) {
+    .best__pic-natural {
+      width: 12.5rem;
+      height: 8.75rem; } }
 
 .best__desc {
   margin-top: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .best__desc {
+      text-align: left;
+      margin-left: 2.5rem; } }
   .best__desc_three {
     margin-top: 1.875rem; }
+    @media screen and (max-width: 480px) {
+      .best__desc_three {
+        margin-top: 3.125rem; } }
 
-.best__title {
+.best__subtitle {
   font-size: 1.5rem;
   font-family: 'lifehackmedium'; }
+  @media screen and (max-width: 480px) {
+    .best__subtitle {
+      font-size: 1.625rem; } }
 
 .best__desc-text {
   font-family: 'ubuntulight';
@@ -674,10 +755,17 @@ button {
   line-height: 1.7;
   margin-top: 0.9375rem;
   color: #585a5a; }
+  @media screen and (max-width: 480px) {
+    .best__desc-text {
+      font-size: 1rem; } }
 
 @media screen and (max-width: 768px) {
   .reviews {
     height: 164vh; } }
+
+@media screen and (max-width: 480px) {
+  .reviews {
+    height: 128vh; } }
 
 .reviews__list {
   height: 100%;
@@ -718,11 +806,34 @@ button {
   -webkit-transition: opacity .4s;
   -o-transition: opacity .4s;
   transition: opacity .4s; }
+  @media screen and (max-width: 768px) {
+    .reviews__hover {
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .reviews__hover {
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .reviews__title {
   font-family: 'gagalinregular';
   color: #fff;
   letter-spacing: 0.0625rem; }
+  @media screen and (max-width: 480px) {
+    .reviews__title {
+      font-size: 1.6875rem;
+      padding-bottom: 15%; } }
 
 .reviews__text {
   color: #e4e4e4;
@@ -730,6 +841,12 @@ button {
   line-height: 1.7;
   margin-top: 1.875rem;
   margin-bottom: 0.9375rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__text {
+      margin-top: 5%; } }
+  @media screen and (max-width: 480px) {
+    .reviews__text {
+      display: none; } }
 
 .fixed-menu {
   position: fixed;
@@ -781,6 +898,9 @@ button {
   height: 3.75rem;
   position: absolute;
   bottom: 0; }
+  @media screen and (max-width: 480px) {
+    .footer {
+      height: 18vh; } }
 
 .contacts {
   color: #fff;
@@ -790,6 +910,22 @@ button {
   display: -ms-flexbox;
   display: flex;
   padding: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .contacts {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 1rem; } }
 
 .contacts__mine {
   -webkit-box-flex: 1;
@@ -798,6 +934,11 @@ button {
   @media screen and (max-width: 768px) {
     .contacts__mine {
       margin-left: 2%; } }
+  @media screen and (max-width: 480px) {
+    .contacts__mine {
+      margin-left: 0;
+      text-align: center;
+      padding-top: 2%; } }
 
 .contacts__address {
   font-style: normal; }
@@ -814,6 +955,10 @@ button {
   width: 0.6875rem;
   height: 0.6875rem;
   margin-right: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .contacts__phone-icon {
+      width: 0.9375rem;
+      height: 0.9375rem; } }
 
 .order {
   background: url("../../image/bg/Rectangle 6.jpg") center center/cover no-repeat;
@@ -826,7 +971,10 @@ button {
   margin-top: 3rem; }
   @media screen and (max-width: 768px) {
     .form {
-      margin-top: 50px; } }
+      margin-top: 3.125rem; } }
+  @media screen and (max-width: 480px) {
+    .form {
+      margin-top: 2.6875rem; } }
 
 .form__elem {
   display: -webkit-box;
@@ -841,6 +989,10 @@ button {
       -ms-flex-direction: column;
       flex-direction: column;
       padding: 0 17%; } }
+  @media screen and (max-width: 480px) {
+    .form__elem {
+      padding: 0;
+      font-size: 1.0625rem; } }
 
 .form__column {
   -webkit-box-flex: 1;
@@ -853,6 +1005,22 @@ button {
   .form__column:last-child {
     margin-right: 0; }
 
+@media screen and (max-width: 480px) {
+  .form__row-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
 .form__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,6 +1029,9 @@ button {
   @media screen and (max-width: 768px) {
     .form__row_pp {
       margin-bottom: 7%; } }
+  @media screen and (max-width: 480px) {
+    .form__row {
+      margin-bottom: 6%; } }
 
 .form__block {
   -webkit-box-flex: 1;
@@ -870,6 +1041,12 @@ button {
   display: block; }
   .form__block:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .form__block_margin-on-mobile {
+      margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .form__block_hidden-on-mobile {
+      display: none; } }
 
 .form__block-title {
   margin-bottom: 0.3125rem; }
@@ -976,7 +1153,7 @@ button {
   position: relative; }
   @media screen and (max-width: 768px) {
     .right__team {
-      padding-top: 136%; } }
+      padding-top: 173%; } }
 
 .team__block {
   height: 100%;
@@ -1004,6 +1181,10 @@ button {
       flex-direction: column;
       padding: 0;
       padding-bottom: 5%; } }
+  @media screen and (max-width: 480px) {
+    .team__block {
+      padding-left: 5%;
+      padding-top: 7%; } }
 
 .accordeon {
   font-size: 0.875rem;
@@ -1090,6 +1271,10 @@ button {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto; }
+  @media screen and (max-width: 480px) {
+    .accordeon__photo {
+      width: 7.5rem;
+      height: 7.5rem; } }
 
 .accordeon__desc {
   font-family: 'ubuntulight';
@@ -1097,17 +1282,26 @@ button {
   @media screen and (max-width: 768px) {
     .accordeon__desc {
       margin-left: 0;
-      margin-top: 20px; } }
+      margin-top: 1.25rem; } }
+  @media screen and (max-width: 480px) {
+    .accordeon__desc {
+      margin-top: 1.25rem; } }
 
 .accordeon__subtitle {
   font-family: 'ubuntubold';
   margin-bottom: 0.9375rem; }
+  @media screen and (max-width: 480px) {
+    .accordeon__subtitle {
+      font-size: 1rem; } }
 
 .accordeon__text {
   line-height: 1.7; }
   @media screen and (max-width: 768px) {
     .accordeon__text {
       width: 340px; } }
+  @media screen and (max-width: 480px) {
+    .accordeon__text {
+      font-size: 1rem; } }
 
 .menu {
   background: url("../../image/bg/Rectangle 4.jpg") center center no-repeat/cover;
@@ -1117,6 +1311,9 @@ button {
   @media screen and (max-width: 768px) {
     .menu {
       padding-bottom: 113%; } }
+  @media screen and (max-width: 480px) {
+    .menu {
+      padding-bottom: 151%; } }
 
 .menu__item {
   display: -webkit-box;
@@ -1135,6 +1332,9 @@ button {
 
 .menu__item_active {
   width: auto; }
+  @media screen and (max-width: 480px) {
+    .menu__item_active {
+      width: 116%; } }
   .menu__item_active .menu__text {
     width: 37.5rem;
     padding: 3.75rem 2.5rem;
@@ -1149,7 +1349,7 @@ button {
   transform: rotate(180deg);
   font-size: 2.5rem;
   font-family: 'gagalinregular';
-  width: 5rem;
+  min-width: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1157,9 +1357,15 @@ button {
   -ms-flex-align: center;
   align-items: center;
   background: rgba(76, 78, 80, 0.6); }
+  @media screen and (max-width: 480px) {
+    .menu__title {
+      min-width: 3.125rem; } }
 
 .menu__subtitle {
   margin-top: 2.5rem; }
+  @media screen and (max-width: 480px) {
+    .menu__subtitle {
+      font-size: 1.875rem; } }
 
 .menu__text {
   width: 0;
@@ -1174,11 +1380,17 @@ button {
   @media screen and (max-width: 768px) {
     .maps {
       height: 163vh; } }
+  @media screen and (max-width: 480px) {
+    .maps {
+      height: 128vh; } }
 
 .social__networks {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1; }
+  @media screen and (max-width: 480px) {
+    .social__networks {
+      padding-top: 3%; } }
 
 .social__list {
   display: -webkit-box;
@@ -1191,6 +1403,9 @@ button {
   @media screen and (max-width: 768px) {
     .social__list {
       padding-right: 2%; } }
+  @media screen and (max-width: 480px) {
+    .social__list {
+      padding: 0; } }
 
 .social__item {
   margin-left: 1.25rem;
@@ -1210,6 +1425,10 @@ button {
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s; }
+  @media screen and (max-width: 480px) {
+    .social__vk {
+      width: 1.6875rem;
+      height: 1.6875rem; } }
 
 .social__fb {
   width: 1rem;
@@ -1220,6 +1439,10 @@ button {
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s; }
+  @media screen and (max-width: 480px) {
+    .social__fb {
+      width: 1.4375rem;
+      height: 1.4375rem; } }
 
 .social__inst {
   width: 1rem;
@@ -1230,6 +1453,10 @@ button {
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s; }
+  @media screen and (max-width: 480px) {
+    .social__inst {
+      width: 1.4375rem;
+      height: 1.4375rem; } }
 
 .social__twit {
   width: 1.125rem;
@@ -1240,6 +1467,10 @@ button {
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s; }
+  @media screen and (max-width: 480px) {
+    .social__twit {
+      width: 1.4375rem;
+      height: 1.4375rem; } }
 
 .hamburger-menu {
   width: 1.5625rem;
@@ -1264,12 +1495,14 @@ button {
     content: "";
     position: absolute;
     top: 50%;
-    margin-top: -0.125rem;
     width: 100%;
     height: 0.3125rem;
     background-color: white;
     border-radius: 0.125rem;
     margin-top: 0.4375rem; }
+    @media screen and (max-width: 480px) {
+      .hamburger-menu span:before {
+        height: 0.25rem; } }
   .hamburger-menu span:after {
     content: "";
     position: absolute;

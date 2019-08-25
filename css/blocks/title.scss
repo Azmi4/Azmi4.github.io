@@ -21,6 +21,11 @@
 
     &_team {
         margin-bottom: rem(50px);
+
+        @include phones {
+            margin-bottom: rem(33px);
+            font-size: rem(58px);
+        }
     }
 }
 
@@ -30,5 +35,17 @@
     @include tablets {
         margin-left: 3%;
         margin-top: 14%;
+    }
+
+    @include phones {
+        font-size: rem(53px);
+        margin-left: 14%;
+        margin-top: 12%;
+    }
+}
+
+.title__order {
+    @include phones {
+        font-size: rem(59px);
     }
 }

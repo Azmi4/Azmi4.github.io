@@ -7,6 +7,10 @@
     font-size: rem(13px);
     font-family: 'ubuntumedium';
 
+    @include phones {
+        padding: rem(12px) rem(20px);
+    }
+
     &_color {
         &_black {
             background: $black;
