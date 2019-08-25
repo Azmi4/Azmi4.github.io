@@ -1,3 +1,9 @@
+.reviews {
+    @include tablets {
+        height: 164vh;
+    }
+}
+
 .reviews__list {
     height: 100%;
     display: flex;
@@ -8,6 +14,11 @@
     width: 25%;
     height: 50%;
     position: relative;
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
     
     &:hover {
         .reviews__hover {

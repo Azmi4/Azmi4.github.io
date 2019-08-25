@@ -2,6 +2,11 @@
     background: url('../../image/bg/Rectangle\ 4.jpg') center center no-repeat / cover;
     position: relative;
     color: #fff;
+    height: auto;
+
+    @include tablets {
+        padding-bottom: 113%;
+    }
 }
 
 .menu__item {

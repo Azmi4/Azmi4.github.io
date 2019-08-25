@@ -1,4 +1,8 @@
 .order {
     background: url('../../image/bg/Rectangle\ 6.jpg') center center / cover no-repeat;
     color: #fff;
+
+    @include tablets {
+        height: auto;   
+    }
 }

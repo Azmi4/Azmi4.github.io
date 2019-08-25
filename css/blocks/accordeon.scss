@@ -2,6 +2,10 @@
     font-size: rem(14px);
     color: #fff;
 
+    @include tablets {
+        text-align: center;
+    }
+
     &_menu {
         position: absolute;
         right: 0;
@@ -13,15 +17,16 @@
     }
 }
 
-.accordeon__block {
-    display: flex;
-    height: 0;
-    overflow: hidden;
-}
+
 
 .accordeon__item {
     margin-bottom: rem(20px);
+
+    @include tablets {
+        text-align: center;
+    }
 }
+
 
 .accordeon__item_active {
     margin-bottom: rem(40px);
@@ -31,10 +36,10 @@
 
         &:before {
             content: "";
-        border: rem(5px) solid transparent;
-        border-bottom: rem(5px) solid;
-        border-top: rem(0px);
-        margin-right: rem(10px);
+            border: rem(5px) solid transparent;
+            border-bottom: rem(5px) solid;
+            border-top: rem(0px);
+            margin-right: rem(10px);
         }
     }
 
@@ -43,12 +48,30 @@
     }
 }
 
+
+.accordeon__block {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 .accordeon__title {
     font-family: 'gagalinregular';
     margin-bottom: rem(15px);
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    @include tablets {
+        display: inline-flex;
+        font-size: 24px;
+    }
 
     &::before {
         content: "";
@@ -70,6 +93,11 @@
 .accordeon__desc {
     font-family: 'ubuntulight';
     margin-left: rem(20px);
+
+    @include tablets {
+        margin-left: 0;
+        margin-top: 20px;
+    }
     
 }
 
@@ -80,4 +108,8 @@
 
 .accordeon__text {
     line-height: 1.7;
+
+    @include tablets {
+        width: 340px;
+    }
 }

@@ -9,6 +9,9 @@
 .contacts__mine {
     flex: 1;
 
+    @include tablets {
+        margin-left: 2%;
+    }
 }
 
 .contacts__address {

@@ -1,16 +1,29 @@
 .form {
     margin-top: rem(48px);
+
+    @include tablets {
+        margin-top: 50px;   
+    }
 }
 
 .form__elem {
     display: flex;
     font-family: 'ubuntulight';
     font-size: rem(14px);
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 17%;   
+    }
 }
 
 .form__column {
     flex: 1;
     margin-right: rem(20px);
+
+    @include tablets {
+        margin-right: 0;   
+    }
     
     &:last-child {
         margin-right: 0;
@@ -20,6 +33,12 @@
 .form__row {
     display: flex;
     margin-bottom: rem(18px);
+
+    &_pp {
+        @include tablets {
+            margin-bottom: 7%;
+        }
+    }
 }
 
 .form__block {

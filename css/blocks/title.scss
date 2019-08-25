@@ -26,4 +26,9 @@
 
 .title__menu {
     margin: 7.7% 0 0 16.5%;
+
+    @include tablets {
+        margin-left: 3%;
+        margin-top: 14%;
+    }
 }

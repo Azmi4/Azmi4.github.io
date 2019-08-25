@@ -6,6 +6,10 @@
     display: flex;
     justify-content: flex-end;
     padding: rem(10px) rem(80px);
+
+    @include tablets {
+        padding-right: 2%;
+    }
 }
 
 .social__item {
