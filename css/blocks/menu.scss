@@ -54,6 +54,8 @@
     display: flex;
     align-items: center;
     background: rgba(#4c4e50, .6);
+    color: white;
+    text-decoration: none;
 
     @include phones {
         min-width: rem(50px);
