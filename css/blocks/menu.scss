@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
+    min-width: rem(60px);
 
     &_one {
         background: url('../../image/bg/photo-one.jpg') center center no-repeat / cover;
@@ -28,6 +29,10 @@
 
     &_three {
         background: url('../../image/bg/photo-thee.jpg') right center no-repeat / cover;
+    }
+
+    @include phones {
+        min-width: rem(50px);
     }
 }
 

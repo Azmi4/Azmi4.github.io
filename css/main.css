@@ -1322,13 +1322,17 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  cursor: pointer; }
+  cursor: pointer;
+  min-width: 3.75rem; }
   .menu__item_one {
     background: url("../../image/bg/photo-one.jpg") center center no-repeat/cover; }
   .menu__item_two {
     background: url("../../image/bg/photo-two.jpg") right center no-repeat/cover; }
   .menu__item_three {
     background: url("../../image/bg/photo-thee.jpg") right center no-repeat/cover; }
+  @media screen and (max-width: 480px) {
+    .menu__item {
+      min-width: 3.125rem; } }
 
 .menu__item_active {
   width: auto; }
