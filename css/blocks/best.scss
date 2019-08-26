@@ -1,11 +1,10 @@
 .best {
     background: url('../../image/bg/bg.jpg') center center / cover no-repeat;
-    height: auto;
 }
 
 .best__title {
     @include phones {
-        font-size: rem(57px);
+        font-size: rem(45px);
     }
 }
 
@@ -19,8 +18,7 @@
 
     @include phones {
         flex-direction: column;
-        margin-top: rem(20px);
-        margin-left: rem(10px);
+        margin-top: rem(5px);
     }
 }
 
@@ -34,6 +32,7 @@
         display: flex;
         margin-right: 0;
         width: auto;
+        align-items: center;
     }
 
     &_hand {
@@ -53,8 +52,9 @@
     height: rem(89px);
 
     @include phones {
-        width: rem(240px);
-        height: rem(140px);
+        width: rem(80px);
+        height: rem(70px);
+        flex: 0 0 auto;
     }
 }
 
@@ -63,8 +63,9 @@
     height: rem(86px);
 
     @include phones {
-        width: rem(260px);
-        height: rem(140px);
+        width: rem(80px);
+        height: rem(70px);
+        flex: 0 0 auto;
     }
 }
 
@@ -73,8 +74,9 @@
     height: rem(75px);
 
     @include phones {
-        width: rem(200px);
-        height: rem(140px);
+        width: rem(80px);
+        height: rem(70px);
+        flex: 0 0 auto;
     }
 }
 
@@ -83,7 +85,7 @@
 
     @include phones {
         text-align: left;
-        margin-left: rem(40px);
+        margin-left: rem(17px);
     }
     
     &_three {
@@ -100,7 +102,7 @@
     font-family: 'lifehackmedium';
     
     @include phones {
-        font-size: rem(26px);
+        font-size: rem(18px);
     }
 }
 
@@ -112,6 +114,6 @@
     color: #585a5a;
 
     @include phones {
-        font-size: rem(16px);
+        font-size: rem(10px);
     }
 }

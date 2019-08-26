@@ -4,6 +4,10 @@
     color: $yellow;
     line-height: 1;
 
+    @include phones {
+        font-size: rem(55px);
+    }
+
     &_color {
         &_black {
             color: $black;
@@ -24,7 +28,7 @@
 
         @include phones {
             margin-bottom: rem(33px);
-            font-size: rem(58px);
+            font-size: rem(50px);
         }
     }
 }
@@ -46,6 +50,6 @@
 
 .title__order {
     @include phones {
-        font-size: rem(59px);
+        font-size: rem(40px);
     }
 }

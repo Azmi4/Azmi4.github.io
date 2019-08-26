@@ -8,6 +8,10 @@
     @include tablets {
         display: flex;
     }
+
+    @include phones {
+        margin-bottom: rem(5px);
+    }
 }
 
 .hamburger-menu span {

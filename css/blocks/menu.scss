@@ -2,22 +2,55 @@
     background: url('../../image/bg/Rectangle\ 4.jpg') center center no-repeat / cover;
     position: relative;
     color: #fff;
-    height: auto;
-
-    @include tablets {
-        padding-bottom: 113%;
-    }
-
-    @include phones {
-        padding-bottom: 151%;
-    }
 }
 
 .menu__item {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    min-width: rem(60px);
+}
+
+.menu__item_active {
+    @include phones {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .menu__text {
+        padding: rem(60px) rem(40px);
+        line-height: 1.7;
+
+        @include phones {
+            width: 100%;
+        }
+    }
+}
+
+.menu__title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: rem(40px);
+    font-family: 'gagalinregular';
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(#4c4e50, .6);
+    color: white;
+    text-decoration: none;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(#4c4e50, .6);
+        z-index: -1;
+    }
 
     &_one {
         background: url('../../image/bg/photo-one.jpg') center center no-repeat / cover;
@@ -32,38 +65,7 @@
     }
 
     @include phones {
-        min-width: rem(50px);
-    }
-}
-
-.menu__item_active {
-    width: auto;
-
-    @include phones {
-        width: 116%;
-    }
-
-    .menu__text {
-        width: rem(600px);
-        padding: rem(60px) rem(40px);
-        line-height: 1.7;
-    }
-}
-
-.menu__title {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: rem(40px);
-    font-family: 'gagalinregular';
-    min-width: rem(80px);
-    display: flex;
-    align-items: center;
-    background: rgba(#4c4e50, .6);
-    color: white;
-    text-decoration: none;
-
-    @include phones {
-        min-width: rem(50px);
+        width: rem(48px);
     }
 }
 

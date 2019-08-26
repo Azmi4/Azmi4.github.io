@@ -1,12 +1,4 @@
 .maps {
     background: url('../../image/bg/Layer\ 4.jpg') center center no-repeat / cover;
     position: relative;
-
-    @include tablets {
-        height: 163vh;
-    }
-
-    @include phones {
-        height: 128vh;
-    }
 }

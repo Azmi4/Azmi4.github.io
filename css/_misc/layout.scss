@@ -34,6 +34,8 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
 
   &_best {
     padding-bottom: 29px;
@@ -41,10 +43,6 @@ body {
     @include tablets {
       padding-top: 30%;
       padding-bottom: 44%;
-    }
-
-    @include phones {
-      padding-top: 21%;
     }
   }
 
@@ -57,8 +55,8 @@ body {
     }
 
     @include phones {
-      padding-top: 14%;
-      padding-bottom: 16%;
+      padding-top: 5%;
+      padding-bottom: 5%;
     }
   }
 }
