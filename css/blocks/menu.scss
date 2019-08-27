@@ -23,6 +23,7 @@
     .menu__text {
         padding: rem(60px) rem(40px);
         line-height: 1.7;
+        width: 100%;
 
         @include phones {
             width: 100%;
@@ -35,10 +36,9 @@
     transform: rotate(180deg);
     font-size: rem(40px);
     font-family: 'gagalinregular';
-    width: 100%;
+    width: rem(80px);
     display: flex;
     align-items: center;
-    background: rgba(#4c4e50, .6);
     color: white;
     text-decoration: none;
     position: relative;

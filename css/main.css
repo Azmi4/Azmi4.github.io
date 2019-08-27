@@ -1329,7 +1329,8 @@ button {
 
 .menu__item_active .menu__text {
   padding: 3.75rem 2.5rem;
-  line-height: 1.7; }
+  line-height: 1.7;
+  width: 100%; }
   @media screen and (max-width: 480px) {
     .menu__item_active .menu__text {
       width: 100%; } }
@@ -1343,14 +1344,13 @@ button {
   transform: rotate(180deg);
   font-size: 2.5rem;
   font-family: 'gagalinregular';
-  width: 100%;
+  width: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: rgba(76, 78, 80, 0.6);
   color: white;
   text-decoration: none;
   position: relative; }
