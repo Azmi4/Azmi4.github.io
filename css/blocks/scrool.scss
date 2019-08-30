@@ -1,0 +1,18 @@
+.scrool {
+    width: rem(25px);
+    height: rem(55px);
+    padding: 0;
+}
+
+.scrool-left {
+    width: rem(25px);
+    height: rem(14px);
+    transform: rotate(90deg);
+}
+
+.scrool-right {
+    width: rem(25px);
+    height: rem(14px);
+    transform: rotate(270deg);
+    padding: 0;
+}

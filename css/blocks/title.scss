@@ -11,7 +11,7 @@
     &_color {
         &_black {
             color: $black;
-            font-size: 72px;
+            font-size: rem(72px);
         }
 
         &_white {
@@ -51,5 +51,11 @@
 .title__order {
     @include phones {
         font-size: rem(40px);
+    }
+}
+
+.title__beef {
+    @include phones {
+        font-size: rem(35px);
     }
 }

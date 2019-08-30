@@ -1,0 +1,118 @@
+.composition__block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablets {
+        flex-direction: unset;
+        width: 100%;
+    }
+}
+
+.composition {
+   width: rem(90px);
+   height: rem(90px);
+   background: #f08c33;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: rem(5px);
+   flex-direction: column;
+   margin-left: rem(10px);
+   position: relative;
+
+   @include tablets {
+       margin-left: 10%;
+   }
+
+   @include phones {
+       margin: 0;
+   }
+
+   &:hover {
+
+        .composition__list {
+           opacity: .9;
+           left: rem(90px);
+       }
+   }
+}
+
+.composition__burger {
+    width: rem(50px);
+    height: rem(50px);
+}
+
+.calories__kkal {
+    width: rem(55px);
+    height: rem(55px);
+    margin-left: rem(30px);
+}
+
+.composition__list {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: rem(9999px);
+    background: #fff;
+    border-radius: rem(5px);
+    color: #000;
+    padding: rem(15px);
+    font-family: 'ubuntubold';
+    font-size: rem(14px);
+    width: rem(300px);
+    transition: opacity .4s;
+}
+
+.composition__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(10px);
+}
+
+.composition__min-block {
+    display: flex;
+    align-items: center;
+}
+
+.composition__text {
+    margin-left: rem(25px);
+}
+
+
+
+
+.composition__beef {
+    width: rem(50px);
+    height: rem(40px);
+}
+
+.composition__buns {
+    width: rem(50px);
+    height: rem(46px);
+}
+
+.composition__salad {
+    width: rem(50px);
+    height: rem(38px);
+}
+
+.composition__sauce {
+    width: rem(50px);
+    height: rem(38px);
+}
+
+.composition__cucumber {
+    width: rem(50px);
+    height: rem(31px);
+}
+
+.composition__cheese {
+    width: rem(50px);
+    height: rem(33px);
+}

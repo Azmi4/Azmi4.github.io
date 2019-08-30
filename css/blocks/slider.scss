@@ -1,0 +1,63 @@
+.slider {
+    background-image: linear-gradient(#f9b43b, #eb8c38, #f9b43b);
+}
+
+.slider-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+
+    @include tablets {
+        padding: 0 5%;
+    }
+
+    @include phones {
+        height: 100%;
+        padding: 0 2% 0 2%;
+        justify-content: center;
+    }
+}
+
+.slider__content {
+    display: flex;
+    color: #fff;
+    font-family: 'gagalinregular';
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @include phones {
+        height: 100%;
+    }
+}
+
+.slider__img {
+    flex: 0 0 auto;
+    position: relative;
+    display: flex;
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {
+        height: 50%;
+    }
+}
+
+.slider__block-img {
+    display: flex;
+    align-items: center;
+    padding-top: 7%;
+
+    @include tablets {
+        padding-top: 10%;
+    }
+
+    @include phones {
+        padding-top: 40%;   
+    }
+}

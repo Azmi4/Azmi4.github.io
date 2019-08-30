@@ -1,0 +1,30 @@
+.calories {
+    position: relative;
+    width: rem(90px);
+    height: rem(90px);
+
+    @include tablets {
+        margin-right: 10%;
+    }
+
+    @include phones {
+        margin: 0;
+    }
+}
+
+.calories__kkal {
+    width: rem(55px);
+    height: rem(55px);
+    margin-left: rem(10px);
+}
+
+.calories__number {
+    position: absolute;
+    top: rem(27px);
+    left: rem(21px);
+    font-size: rem(20px);
+}
+
+.calories__text {
+    margin-left: rem(20px);
+}

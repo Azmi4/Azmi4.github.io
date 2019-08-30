@@ -36,12 +36,20 @@
     transform: rotate(180deg);
     font-size: rem(40px);
     font-family: 'gagalinregular';
-    width: rem(80px);
+    width: rem(81px);
     display: flex;
     align-items: center;
     color: white;
     text-decoration: none;
     position: relative;
+
+    @include tablets {
+        width: rem(83px);
+    }
+
+    @include phones {
+        width: rem(48px);
+    }
 
     &::before {
         content: "";
@@ -62,10 +70,6 @@
 
     &_three {
         background: url('../../image/bg/photo-thee.jpg') right center no-repeat / cover;
-    }
-
-    @include phones {
-        width: rem(48px);
     }
 }
 

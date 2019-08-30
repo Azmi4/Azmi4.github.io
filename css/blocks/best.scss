@@ -13,7 +13,7 @@
     margin-top: rem(54px);
 
     @include tablets {
-        margin-top: 70px;
+        margin-top: rem(70px);
     }
 
     @include phones {
