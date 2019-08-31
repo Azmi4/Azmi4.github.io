@@ -31,6 +31,7 @@
 
    @include phones {
        margin: 0;
+       flex: 0 0 auto;
    }
 
    &:hover {
@@ -66,6 +67,11 @@
     font-size: rem(14px);
     width: rem(300px);
     transition: opacity .4s;
+
+    @include phones {
+        width: rem(168px);
+        font-size: rem(8px);
+    }
 }
 
 .composition__item {
@@ -73,6 +79,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: rem(10px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .composition__min-block {
@@ -82,6 +92,11 @@
 
 .composition__text {
     margin-left: rem(25px);
+
+    @include phones {
+        margin-left: rem(12px);
+        
+    }
 }
 
 
@@ -90,29 +105,59 @@
 .composition__beef {
     width: rem(50px);
     height: rem(40px);
+
+    @include phones {
+        width: rem(30px);
+        height: rem(20px);
+    }
 }
 
 .composition__buns {
     width: rem(50px);
     height: rem(46px);
+
+    @include phones {
+        width: rem(30px);
+        height: rem(23px);
+    }
 }
 
 .composition__salad {
     width: rem(50px);
     height: rem(38px);
+
+    @include phones {
+        width: rem(30px);
+        height: rem(20px);
+    }
 }
 
 .composition__sauce {
     width: rem(50px);
     height: rem(38px);
+
+    @include phones {
+        width: rem(30px);
+        height: rem(20px);
+    }
 }
 
 .composition__cucumber {
     width: rem(50px);
     height: rem(31px);
+
+    @include phones {
+        width: rem(30px);
+        height: rem(20px);
+    }
 }
 
 .composition__cheese {
     width: rem(50px);
     height: rem(33px);
+
+    @include phones {
+        width: rem(30px);
+        height: rem(20px);
+    }
 }

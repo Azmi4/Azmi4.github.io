@@ -1735,7 +1735,10 @@ button {
       margin-left: 10%; } }
   @media screen and (max-width: 480px) {
     .composition {
-      margin: 0; } }
+      margin: 0;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto; } }
   .composition:hover .composition__list {
     opacity: .9;
     left: 5.625rem; }
@@ -1764,6 +1767,10 @@ button {
   -webkit-transition: opacity .4s;
   -o-transition: opacity .4s;
   transition: opacity .4s; }
+  @media screen and (max-width: 480px) {
+    .composition__list {
+      width: 10.5rem;
+      font-size: 0.5rem; } }
 
 .composition__item {
   display: -webkit-box;
@@ -1776,6 +1783,8 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 0.625rem; }
+  .composition__item:last-child {
+    margin-bottom: 0; }
 
 .composition__min-block {
   display: -webkit-box;
@@ -1787,30 +1796,57 @@ button {
 
 .composition__text {
   margin-left: 1.5625rem; }
+  @media screen and (max-width: 480px) {
+    .composition__text {
+      margin-left: 0.75rem; } }
 
 .composition__beef {
   width: 3.125rem;
   height: 2.5rem; }
+  @media screen and (max-width: 480px) {
+    .composition__beef {
+      width: 1.875rem;
+      height: 1.25rem; } }
 
 .composition__buns {
   width: 3.125rem;
   height: 2.875rem; }
+  @media screen and (max-width: 480px) {
+    .composition__buns {
+      width: 1.875rem;
+      height: 1.4375rem; } }
 
 .composition__salad {
   width: 3.125rem;
   height: 2.375rem; }
+  @media screen and (max-width: 480px) {
+    .composition__salad {
+      width: 1.875rem;
+      height: 1.25rem; } }
 
 .composition__sauce {
   width: 3.125rem;
   height: 2.375rem; }
+  @media screen and (max-width: 480px) {
+    .composition__sauce {
+      width: 1.875rem;
+      height: 1.25rem; } }
 
 .composition__cucumber {
   width: 3.125rem;
   height: 1.9375rem; }
+  @media screen and (max-width: 480px) {
+    .composition__cucumber {
+      width: 1.875rem;
+      height: 1.25rem; } }
 
 .composition__cheese {
   width: 3.125rem;
   height: 2.0625rem; }
+  @media screen and (max-width: 480px) {
+    .composition__cheese {
+      width: 1.875rem;
+      height: 1.25rem; } }
 
 .calories {
   position: relative;
@@ -1821,7 +1857,7 @@ button {
       margin-right: 10%; } }
   @media screen and (max-width: 480px) {
     .calories {
-      margin: 0; } }
+      margin: 0 0 0 53%; } }
 
 .calories__kkal {
   width: 3.4375rem;
