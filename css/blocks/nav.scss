@@ -14,9 +14,9 @@
         background-color: rgba($black, .9);
         .nav__list {
             flex-direction: column;
-            height: 54%;
+            height: 62%;
             text-align: center;
-            font-size: rem(24px);
+            font-size: rem(30px);
         }
     }
 
@@ -54,6 +54,8 @@
 
         @include tablets {
             margin-top: 5%;
+            width: rem(6px);
+            height: rem(6px);
         }
     }
 

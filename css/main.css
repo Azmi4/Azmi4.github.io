@@ -577,9 +577,9 @@ button {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      height: 54%;
+      height: 62%;
       text-align: center;
-      font-size: 1.5rem; }
+      font-size: 1.875rem; }
 
 .nav__list {
   display: -webkit-box;
@@ -618,7 +618,9 @@ button {
     margin-left: 0.9375rem; }
     @media screen and (max-width: 768px) {
       .nav__item:after {
-        margin-top: 5%; } }
+        margin-top: 5%;
+        width: 0.375rem;
+        height: 0.375rem; } }
   .nav__item:last-child {
     margin-right: 0; }
     .nav__item:last-child:after {
