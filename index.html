@@ -19,7 +19,7 @@
                         <use xlink:href="./image/svg-sprite/sprite.svg#logo"></use>
                     </svg>
                     <div class="header__buttons">
-                        <nav class="nav">
+                        <nav class="nav nav__active">
                             <ul class="nav__list">
                                 <li class="nav__item">
                                     <a href="#" class="nav__link">О нас</a>
@@ -45,7 +45,6 @@
                             </ul>
                         </nav>
                         <button type="button" class="btn"><span>Заказать</span></button>
-                        <a href="#" class="hamburger-menu"><span></span></a>
                     </div>
                 </header>
                 <div class="hero__content">
@@ -282,7 +281,7 @@
         <section class="section section_non-centered menu">
             <h2 class="title title__menu title_color_white">Меню</h2>
             <ul class="accordeon_menu">
-                <li class="menu__item"> <!--menu__item_active-->
+                <li class="menu__item menu__item_active"> <!--menu__item_active-->
                     <a href="#" class="menu__title menu__title_one">
                         <div class="menu__subtitle">Для мясоедов</div>
                     </a>
@@ -598,6 +597,12 @@
             </div>
         </footer>
 
+        <a href="#" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
         <ul class="fixed-menu">
             <li class="fixed-menu__item fixed-menu__item_active">
                 <button class="fixed-menu__dot" type="button"></button>
@@ -629,6 +634,7 @@
         </ul>
         
     </div>
+<script src="./script.js"></script>
 </body>
 
 </html>

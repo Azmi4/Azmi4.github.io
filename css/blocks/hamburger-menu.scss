@@ -2,15 +2,19 @@
     width: rem(25px);
     height: rem(27px);
     position: relative;
-    margin-left: rem(30px);
     display: none;
+    position: fixed;
+    top: rem(38px);
+    right: rem(15px);
 
     @include tablets {
         display: flex;
+        top: rem(33px);
+        height: rem(28px);
     }
 
     @include phones {
-        margin-bottom: rem(5px);
+        top: rem(38px);
     }
 }
 
@@ -18,33 +22,40 @@
     position: absolute;
     top: 50%;
     width: 100%;
-    height: rem(5px);
+    height: rem(4px);
     background-color: white;
-    border-radius: rem(2px);
+    border-radius: rem(4px);
+    margin-top: rem(-2px);
 
     &:before {
         content: "";
         position: absolute;
         top: 50%;
         width: 100%;
-        height: rem(5px);
+        height: rem(4px);
         background-color: white;
-        border-radius: rem(2px);
+        border-radius: rem(4px);
         margin-top: rem(7px);
 
+        @include tablets {
+            margin-top: rem(6px);
+            height: rem(5px);
+        }
+
         @include phones {
+            margin-top: rem(7px);
             height: rem(4px);
         }
     }
 
-    &:after {
+    &::after {
         content: "";
         position: absolute;
         top: 50%;
-        margin-top: rem(-12px);
         width: 100%;
-        height: rem(5px);
+        height: rem(4px);
         background-color: white;
-        border-radius: rem(5px);
+        border-radius: rem(4px);
+        margin-top: rem(-11px);
     }
 }

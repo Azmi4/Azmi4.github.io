@@ -7,8 +7,13 @@
     font-size: rem(13px);
     font-family: 'ubuntumedium';
 
+    @include tablets {
+        margin-right: rem(40px);
+    }
+
     @include phones {
         padding: rem(12px) rem(20px);
+        margin-right: rem(50px);
     }
 
     &_color {

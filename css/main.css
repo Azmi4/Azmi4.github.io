@@ -555,9 +555,31 @@ button {
 
 .nav {
   margin-right: 0.9375rem; }
-  @media screen and (max-width: 768px) {
-    .nav {
-      display: none; } }
+  .nav__active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 4;
+    background-color: rgba(47, 50, 52, 0.9); }
+    .nav__active .nav__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 54%;
+      text-align: center;
+      font-size: 1.5rem; }
 
 .nav__list {
   display: -webkit-box;
@@ -566,6 +588,11 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .nav__list {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
 
 .nav__item {
   display: -webkit-box;
@@ -575,6 +602,12 @@ button {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 0.9375rem; }
+  @media screen and (max-width: 768px) {
+    .nav__item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .nav__item:after {
     content: "";
     width: 0.25rem;
@@ -583,6 +616,9 @@ button {
     border-radius: 50%;
     display: block;
     margin-left: 0.9375rem; }
+    @media screen and (max-width: 768px) {
+      .nav__item:after {
+        margin-top: 5%; } }
   .nav__item:last-child {
     margin-right: 0; }
     .nav__item:last-child:after {
@@ -601,9 +637,13 @@ button {
   color: #fff;
   font-size: 0.8125rem;
   font-family: 'ubuntumedium'; }
+  @media screen and (max-width: 768px) {
+    .btn {
+      margin-right: 2.5rem; } }
   @media screen and (max-width: 480px) {
     .btn {
-      padding: 0.75rem 1.25rem; } }
+      padding: 0.75rem 1.25rem;
+      margin-right: 3.125rem; } }
   .btn_color_black {
     background: #2f3234; }
 
@@ -1487,45 +1527,55 @@ button {
   width: 1.5625rem;
   height: 1.6875rem;
   position: relative;
-  margin-left: 1.875rem;
-  display: none; }
+  display: none;
+  position: fixed;
+  top: 2.375rem;
+  right: 0.9375rem; }
   @media screen and (max-width: 768px) {
     .hamburger-menu {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      top: 2.0625rem;
+      height: 1.75rem; } }
   @media screen and (max-width: 480px) {
     .hamburger-menu {
-      margin-bottom: 0.3125rem; } }
+      top: 2.375rem; } }
 
 .hamburger-menu span {
   position: absolute;
   top: 50%;
   width: 100%;
-  height: 0.3125rem;
+  height: 0.25rem;
   background-color: white;
-  border-radius: 0.125rem; }
+  border-radius: 0.25rem;
+  margin-top: -0.125rem; }
   .hamburger-menu span:before {
     content: "";
     position: absolute;
     top: 50%;
     width: 100%;
-    height: 0.3125rem;
+    height: 0.25rem;
     background-color: white;
-    border-radius: 0.125rem;
+    border-radius: 0.25rem;
     margin-top: 0.4375rem; }
+    @media screen and (max-width: 768px) {
+      .hamburger-menu span:before {
+        margin-top: 0.375rem;
+        height: 0.3125rem; } }
     @media screen and (max-width: 480px) {
       .hamburger-menu span:before {
+        margin-top: 0.4375rem;
         height: 0.25rem; } }
-  .hamburger-menu span:after {
+  .hamburger-menu span::after {
     content: "";
     position: absolute;
     top: 50%;
-    margin-top: -0.75rem;
     width: 100%;
-    height: 0.3125rem;
+    height: 0.25rem;
     background-color: white;
-    border-radius: 0.3125rem; }
+    border-radius: 0.25rem;
+    margin-top: -0.6875rem; }
 
 .slider {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(#eb8c38), to(#f9b43b));
