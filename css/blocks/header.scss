@@ -12,6 +12,7 @@
     width: rem(92px);
     height: rem(69px);
     flex: 0 0 auto;
+    z-index: 5;
 
     @include phones {
         width: rem(103px);

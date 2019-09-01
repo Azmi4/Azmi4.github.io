@@ -1,7 +1,7 @@
 .nav {
     margin-right: rem(15px);
 
-    &__active {
+    &.active {
         position: fixed;
         top: 0;
         left: 0;
@@ -12,16 +12,21 @@
         align-items: center;
         z-index: 4;
         background-color: rgba($black, .9);
+        transition: opacity 1s;
         .nav__list {
             flex-direction: column;
             height: 62%;
             text-align: center;
             font-size: rem(30px);
+
+            @include phones {
+                font-size: rem(20px);
+            }
         }
     }
 
     @include tablets {
-        // display: none;
+        display: none;
     }
 }
 
@@ -53,9 +58,14 @@
         margin-left: rem(15px);
 
         @include tablets {
-            margin-top: 5%;
+            margin-top: rem(30px);
             width: rem(6px);
             height: rem(6px);
+            margin-left: 0;
+        }
+
+        @include phones {
+            margin-top: rem(15px);
         }
     }
 

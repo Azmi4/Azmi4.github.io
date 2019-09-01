@@ -8,7 +8,7 @@
     font-family: 'ubuntumedium';
 
     @include tablets {
-        margin-right: rem(40px);
+        margin-right: rem(10px);
     }
 
     @include phones {
