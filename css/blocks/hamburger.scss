@@ -14,10 +14,13 @@
   overflow: visible;
   z-index: 4;
   display: none;
+  position: fixed;
+  right: 0;
   
   @include tablets {
     display: flex;
-  }}
+  }
+}
   .hamburger:hover {
     opacity: 0.7; }
   .hamburger.active:hover {

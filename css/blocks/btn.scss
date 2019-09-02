@@ -8,12 +8,12 @@
     font-family: 'ubuntumedium';
 
     @include tablets {
-        margin-right: rem(10px);
+        margin-right: rem(40px);
     }
 
     @include phones {
         padding: rem(12px) rem(20px);
-        margin-right: rem(50px);
+        margin-right: rem(55px);
     }
 
     &_color {
