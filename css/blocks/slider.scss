@@ -25,6 +25,7 @@
 
 .slider__list {
     display: flex;
+    position: relative;
     will-change: right;
     transition: right .3s;
 }
@@ -35,7 +36,6 @@
     font-family: 'gagalinregular';
     min-width: 100%;
     
-
     @include tablets {
         flex-direction: column;
         justify-content: center;

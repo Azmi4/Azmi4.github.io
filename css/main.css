@@ -1714,6 +1714,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   will-change: right;
   -webkit-transition: right .3s;
   -o-transition: right .3s;
@@ -1841,7 +1842,8 @@ button {
   width: 100%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  outline: none; }
 
 .scrool-left {
   width: 1.5625rem;

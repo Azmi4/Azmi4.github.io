@@ -30,7 +30,56 @@ hamburgerMenu.addEventListener('click', function (e) {
         closeHamburgerMenu();
     }
 });
+//////////////////////////////////////////////////////
 
+// слайд
+slider();
+
+function slider() {
+    const sliderLeftButton = document.querySelector('.scrool__left');
+    const sliderRightButton = document.querySelector('.scrool__right');
+    const slider = document.querySelector('#slider');
+    const slides = document.querySelectorAll('.slider__item');
+    const slide = document.querySelector('.slider__item');
+
+    let minRight = 0;
+    let step = slide.offsetWidth;
+    let maxRight = (slides.length - 1) * slide.offsetWidth;
+    let currentRight = 0;
+
+    slider.style.right = currentRight;
+
+    function leftMove() {
+        if (currentRight > minRight) {
+            currentRight -= step;
+            slider.style.right = currentRight + "px";
+        } else {
+            currentRight = maxRight;
+            slider.style.right = maxRight + "px";
+        }
+    }
+
+    function rightMove() {
+        if (currentRight < maxRight) {
+            currentRight += step;
+            slider.style.right = currentRight + "px";
+        } else {
+            currentRight = minRight;
+            slider.style.right = minRight + "px";
+        }
+    }
+
+    sliderLeftButton.addEventListener('click', function() {
+        leftMove();
+    });
+
+    sliderRightButton.addEventListener('click', function() {
+        rightMove();
+    });
+}
+///////////////////////////////////////////////////////////////////
+
+// состав
 var compositionMenu = document.querySelector('#compositionMenu');
 
 function openCompositionMenu() {
