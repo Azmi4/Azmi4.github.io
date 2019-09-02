@@ -57,5 +57,6 @@
 .title__beef {
     @include phones {
         font-size: rem(35px);
+        padding: 0 6%
     }
 }

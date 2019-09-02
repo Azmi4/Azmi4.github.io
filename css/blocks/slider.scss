@@ -19,10 +19,22 @@
     }
 }
 
+.slider__content {
+    overflow: hidden;
+}
+
+.slider__list {
+    display: flex;
+    will-change: right;
+    transition: right .3s;
+}
+
 .slider__item {
     display: flex;
     color: #fff;
     font-family: 'gagalinregular';
+    min-width: 100%;
+    
 
     @include tablets {
         flex-direction: column;
@@ -58,6 +70,6 @@
     }
 
     @include phones {
-        padding-top: 40%;   
+        padding: 40% 7% 0 5%;  
     }
 }

@@ -8,7 +8,7 @@
     }
 
     @include phones {
-        margin: 0 0 0 53%;
+        margin: 0 0 0 48%;
     }
 }
 
@@ -16,6 +16,10 @@
     width: rem(55px);
     height: rem(55px);
     margin-left: rem(10px);
+
+    @include phones {
+        margin-left: rem(30px);
+    }
 }
 
 .calories__number {
@@ -23,8 +27,16 @@
     top: rem(27px);
     left: rem(21px);
     font-size: rem(20px);
+
+    @include phones {
+        left: rem(42px);
+    }
 }
 
 .calories__text {
     margin-left: rem(20px);
+
+    @include phones {
+        margin-left: rem(42px);
+    }
 }

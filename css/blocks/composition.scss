@@ -25,6 +25,13 @@
    margin-left: rem(10px);
    position: relative;
 
+   &.active {
+       .composition__list {
+            opacity: .9;
+            left: rem(90px);
+       }
+   }
+
    @include tablets {
        margin-left: 10%;
    }
@@ -32,14 +39,6 @@
    @include phones {
        margin: 0;
        flex: 0 0 auto;
-   }
-
-   &:hover {
-
-        .composition__list {
-           opacity: .9;
-           left: rem(90px);
-       }
    }
 }
 

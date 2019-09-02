@@ -29,4 +29,4 @@ hamburgerMenu.addEventListener('click', function (e) {
     if (e.target.classList.contains('nav__link')) {
         closeHamburgerMenu();
     }
-})
+});
