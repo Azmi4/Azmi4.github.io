@@ -1910,7 +1910,8 @@ button {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 0.625rem;
-  position: relative; }
+  position: relative;
+  text-decoration: none; }
   .composition.active .composition__list {
     opacity: .9;
     left: 5.625rem; }
@@ -1927,6 +1928,9 @@ button {
 .composition__burger {
   width: 3.125rem;
   height: 3.125rem; }
+
+.composition__subtitle {
+  color: white; }
 
 .calories__kkal {
   width: 3.4375rem;

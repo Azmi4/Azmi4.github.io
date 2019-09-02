@@ -24,6 +24,7 @@
    flex-direction: column;
    margin-left: rem(10px);
    position: relative;
+   text-decoration: none;
 
    &.active {
        .composition__list {
@@ -45,6 +46,10 @@
 .composition__burger {
     width: rem(50px);
     height: rem(50px);
+}
+
+.composition__subtitle {
+    color: white;
 }
 
 .calories__kkal {

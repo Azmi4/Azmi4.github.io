@@ -30,3 +30,22 @@ hamburgerMenu.addEventListener('click', function (e) {
         closeHamburgerMenu();
     }
 });
+
+var compositionMenu = document.querySelector('#compositionMenu');
+
+function openCompositionMenu() {
+    compositionMenu.classList.add('active');
+}
+
+function closeCompositionMenu() {
+    compositionMenu.classList.remove('active');
+}
+
+compositionMenu.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (compositionMenu.classList.contains('active')) {
+        closeCompositionMenu();
+    } else {
+        openCompositionMenu();
+    }
+});
