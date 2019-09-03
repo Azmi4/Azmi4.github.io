@@ -8,28 +8,34 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-}
 
-.menu__item_active {
-    @include phones {
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        z-index: 1;
-    }
-
-    .menu__text {
-        padding: rem(60px) rem(40px);
-        line-height: 1.7;
-        width: 100%;
+    &.active {
+        .menu__title {
+            color: $yellow;
+        }
 
         @include phones {
             width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .menu__text {
+            padding: rem(60px) rem(40px);
+            line-height: 1.7;
+            width: 100%;
+
+            @include phones {
+                width: 100%;
+            }
         }
     }
 }
+
+
 
 .menu__title {
     writing-mode: vertical-lr;

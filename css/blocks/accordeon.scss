@@ -30,31 +30,33 @@
 .accordeon__item {
     margin-bottom: rem(20px);
 
+    &.active {
+        margin-bottom: rem(40px);
+
+        .accordeon__title {
+            color: $yellow;
+
+            &:before {
+                content: "";
+                border: rem(5px) solid transparent;
+                border-bottom: rem(5px) solid;
+                border-top: rem(0px);
+                margin-right: rem(10px);
+            }
+        }
+
+        .accordeon__block {
+            height: auto;
+        }
+    }
+
     @include tablets {
         text-align: center;
     }
 }
 
 
-.accordeon__item_active {
-    margin-bottom: rem(40px);
 
-    .accordeon__title {
-        color: $yellow;
-
-        &:before {
-            content: "";
-            border: rem(5px) solid transparent;
-            border-bottom: rem(5px) solid;
-            border-top: rem(0px);
-            margin-right: rem(10px);
-        }
-    }
-
-    .accordeon__block {
-        height: auto;
-    }
-}
 
 
 .accordeon__block {

@@ -1,3 +1,4 @@
+// Полноэкранное меню
 var hamburgerMenu = document.querySelector('#hamburgerMenu');
 var hamburgerButton = document.querySelector('#hamburgerButton');
 var navItem = document.querySelector('.nav__link');
@@ -32,7 +33,7 @@ hamburgerMenu.addEventListener('click', function (e) {
 });
 //////////////////////////////////////////////////////
 
-// слайд
+// Слайд
 slider();
 
 function slider() {
@@ -79,8 +80,8 @@ function slider() {
 }
 ///////////////////////////////////////////////////////////////////
 
-// состав
-var compositionMenu = document.querySelector('#compositionMenu');
+// Состав
+var compositionMenuButtons = document.querySelectorAll('.composition');
 
 function openCompositionMenu() {
     compositionMenu.classList.add('active');
@@ -90,11 +91,62 @@ function closeCompositionMenu() {
     compositionMenu.classList.remove('active');
 }
 
-compositionMenu.addEventListener('click', function (e) {
-    e.preventDefault();
-    if (compositionMenu.classList.contains('active')) {
-        closeCompositionMenu();
-    } else {
-        openCompositionMenu();
-    }
-});
+for (let i = 0; i < compositionMenuButtons.length; i++) {
+    const compositionMenu = compositionMenuButtons[i];
+    compositionMenu.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (compositionMenu.classList.toggle('active')) {
+            closeCompositionMenu();
+        } else {
+            openCompositionMenu();
+        }
+    });
+}
+////////////////////////////////////////////////////////////////////
+
+// Команда
+var accordeonMenuButtons = document.querySelectorAll('.accordeon__item');
+
+function openAccordeonMenu() {
+    accordeonMenu.classList.add('active');
+}
+
+function closeAccordeonMenu() {
+    accordeonMenu.classList.remove('active');
+}
+
+for (let i = 0; i < accordeonMenuButtons.length; i++) {
+    const accordeonMenu = accordeonMenuButtons[i];
+    accordeonMenu.addEventListener('click', function () {
+        if (accordeonMenu.classList.toggle('active')) {
+            closeAccordeonMenu();
+        } else {
+            openAccordeonMenu();
+        }
+    });
+}
+//////////////////////////////////////////////////////////////////////////
+
+// Меню
+var menuItemButtons = document.querySelectorAll('.menu__item');
+
+function openMenuItem() {
+    menuItem.classList.add('active');
+}
+
+function closeMenuItem() {
+    menuItem.classList.remove('active');
+}
+
+for (let i = 0; i < menuItemButtons.length; i++) {
+    const menuItem = menuItemButtons[i];
+    menuItem.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (menuItem.classList.toggle('active')) {
+            closeMenuItem();
+        } else {
+            openMenuItem();
+        }
+    });
+}
+////////////////////////////////////////////////////////////////////////////
