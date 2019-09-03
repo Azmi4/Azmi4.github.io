@@ -40,6 +40,71 @@
     opacity: 0;
     transition: opacity .4s;
 
+    &.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($black, .9);
+        opacity: 1;
+        z-index: 2;
+        padding: 0 31%;
+
+        .reviews__modal {
+            padding: rem(30px) rem(20px);
+            background: #fff;
+            border-radius: rem(5px);
+            color: #000;
+            position: relative;
+            .reviews__title {
+                color: #000;
+            }
+            .reviews__text {
+                color: #000;
+                margin: 4% 0 0 0;
+            }
+        }
+
+        .btn {
+            display: none;
+
+            &__modal {
+                display: flex;
+                position: absolute;
+                top: rem(10px);
+                right: rem(10px);
+                height: rem(15px);
+                width: rem(15px);
+                padding: 0;
+                outline: none;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 45%;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $orange;
+                    border-radius: 4px;
+                    transform: rotate(45deg);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 45%;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $orange;
+                    border-radius: 4px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
     @include tablets {
         text-align: center;
     }

@@ -105,32 +105,47 @@ for (let i = 0; i < compositionMenuButtons.length; i++) {
 ////////////////////////////////////////////////////////////////////
 
 // Команда
-var accordeonMenuButtons = document.querySelectorAll('.accordeon__item');
+var teamAccordeon = document.querySelector('.accordeon');
 
-for (var i = 0; i < accordeonMenuButtons.length; i++) {
-    accordeonMenuButtons[i].addEventListener('click', function() {
-        if (!(this.classList.contains('active'))) {
-            for (var i = 0; i < accordeonMenuButtons.length; i ++) {
-                accordeonMenuButtons[i].classList.remove('active');
-            }
-            this.classList.add('active');
+teamAccordeon.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    var teamCard = document.querySelectorAll('.accordeon__item');
+    var target = e.target.closest('li');
+
+    if (!target) return;
+
+    if (!target.classList.contains('active')) {
+        for (var card of teamCard) {
+            card.classList.remove('active');
         }
-    });
-}
+        target.classList.add('active');
+    } else {
+        target.classList.remove('active');
+    }
+});
 //////////////////////////////////////////////////////////////////////////
 
 // Меню
-var menuItemButtons = document.querySelectorAll('.menu__item');
+var menuAccordeon = document.querySelector('.accordeon__menu');
 
-for (var i = 0; i < menuItemButtons.length; i++) {
-    menuItemButtons[i].addEventListener('click', function (e) {
-        e.preventDefault();
-        if (!(this.classList.contains('active'))) {
-            for (var i = 0; i < menuItemButtons.length; i++) {
-                menuItemButtons[i].classList.remove('active');
-            }
-            this.classList.add('active');
+menuAccordeon.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    var menuCard = document.querySelectorAll('.menu__item');
+    var target = e.target.closest('li');
+
+    if (!target) return;
+
+    if (!target.classList.contains('active')) {
+        for (var card of menuCard) {
+            card.classList.remove('active');
         }
-    });
-}
+        target.classList.add('active');
+    } else {
+        target.classList.remove('active');
+    }
+});
 ////////////////////////////////////////////////////////////////////////////
+
+// Модальное окно ОТЗЫВЫ
