@@ -107,21 +107,13 @@ for (let i = 0; i < compositionMenuButtons.length; i++) {
 // Команда
 var accordeonMenuButtons = document.querySelectorAll('.accordeon__item');
 
-function openAccordeonMenu() {
-    accordeonMenu.classList.add('active');
-}
-
-function closeAccordeonMenu() {
-    accordeonMenu.classList.remove('active');
-}
-
-for (let i = 0; i < accordeonMenuButtons.length; i++) {
-    const accordeonMenu = accordeonMenuButtons[i];
-    accordeonMenu.addEventListener('click', function () {
-        if (accordeonMenu.classList.toggle('active')) {
-            closeAccordeonMenu();
-        } else {
-            openAccordeonMenu();
+for (var i = 0; i < accordeonMenuButtons.length; i++) {
+    accordeonMenuButtons[i].addEventListener('click', function() {
+        if (!(this.classList.contains('active'))) {
+            for (var i = 0; i < accordeonMenuButtons.length; i ++) {
+                accordeonMenuButtons[i].classList.remove('active');
+            }
+            this.classList.add('active');
         }
     });
 }
@@ -130,22 +122,14 @@ for (let i = 0; i < accordeonMenuButtons.length; i++) {
 // Меню
 var menuItemButtons = document.querySelectorAll('.menu__item');
 
-function openMenuItem() {
-    menuItem.classList.add('active');
-}
-
-function closeMenuItem() {
-    menuItem.classList.remove('active');
-}
-
-for (let i = 0; i < menuItemButtons.length; i++) {
-    const menuItem = menuItemButtons[i];
-    menuItem.addEventListener('click', function (e) {
+for (var i = 0; i < menuItemButtons.length; i++) {
+    menuItemButtons[i].addEventListener('click', function (e) {
         e.preventDefault();
-        if (menuItem.classList.toggle('active')) {
-            closeMenuItem();
-        } else {
-            openMenuItem();
+        if (!(this.classList.contains('active'))) {
+            for (var i = 0; i < menuItemButtons.length; i++) {
+                menuItemButtons[i].classList.remove('active');
+            }
+            this.classList.add('active');
         }
     });
 }
