@@ -107,7 +107,7 @@ for (let i = 0; i < compositionMenuButtons.length; i++) {
 // Команда
 var teamAccordeon = document.querySelector('.accordeon');
 
-teamAccordeon.addEventListener('click', function (e) {
+teamAccordeon.addEventListener('click', function(e) {
     e.preventDefault();
 
     var teamCard = document.querySelectorAll('.accordeon__item');
@@ -129,7 +129,7 @@ teamAccordeon.addEventListener('click', function (e) {
 // Меню
 var menuAccordeon = document.querySelector('.accordeon__menu');
 
-menuAccordeon.addEventListener('click', function (e) {
+menuAccordeon.addEventListener('click', function(e) {
     e.preventDefault();
 
     var menuCard = document.querySelectorAll('.menu__item');
@@ -149,3 +149,48 @@ menuAccordeon.addEventListener('click', function (e) {
 ////////////////////////////////////////////////////////////////////////////
 
 // Модальное окно ОТЗЫВЫ
+
+///////////////////////////////////////////////////////////////////////////
+
+// Форма
+const myForm = document.querySelector('#myForm');
+const order = document.querySelector('#order');
+
+order.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    if (validateForm(myForm)) {
+        const data = {
+            name: myForm.elements.name.value,
+            phone: myForm.elements.name.value,
+            comment: myForm.elements.name.value
+        };
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.send(JSON.stringify(data));
+    }
+});
+
+function validateForm(form) {
+    let valid = true;
+
+    if (!validateField(form.elements.name)) {
+        valid = false;
+    }
+
+    if (!validateField(form.elements.phone)) {
+        valid = false;
+    }
+
+    if (!validateField(form.elements.comment)) {
+        valid = false;
+    }
+
+    return valid;
+}
+
+function validateField(field) {
+        field.nextElementSibling.textContent = field.validationMessage;
+        return field.checkValidity();
+}
