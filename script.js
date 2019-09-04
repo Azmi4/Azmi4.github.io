@@ -115,19 +115,19 @@ teamAccordeon.addEventListener('click', function(e) {
 
     if (!target) return;
 
-    if (!target.classList.contains('active')) {
+    if (!target.classList.contains('ac-active')) {
         for (var card of teamCard) {
-            card.classList.remove('active');
+            card.classList.remove('ac-active');
         }
-        target.classList.add('active');
+        target.classList.add('ac-active');
     } else {
-        target.classList.remove('active');
+        target.classList.remove('ac-active');
     }
 });
 //////////////////////////////////////////////////////////////////////////
 
 // Меню
-var menuAccordeon = document.querySelector('.accordeon__menu');
+var menuAccordeon = document.querySelector('.accordeon_menu');
 
 menuAccordeon.addEventListener('click', function(e) {
     e.preventDefault();
@@ -137,28 +137,28 @@ menuAccordeon.addEventListener('click', function(e) {
 
     if (!target) return;
 
-    if (!target.classList.contains('active')) {
+    if (!target.classList.contains('menu-active')) {
         for (var card of menuCard) {
-            card.classList.remove('active');
+            card.classList.remove('menu-active');
         }
-        target.classList.add('active');
+        target.classList.add('menu-active');
     } else {
-        target.classList.remove('active');
+        target.classList.remove('menu-active');
     }
 });
 ////////////////////////////////////////////////////////////////////////////
 
 // Форма
-const myform = document.querySelector("#myform");
+const myForm = document.querySelector("#myForm");
 const order = document.querySelector("#order");
 
 order.addEventListener('click', function (event) {
     event.preventDefault();
-    if (validateForm(myform)) {
+    if (validateForm(myForm)) {
         let data = new FormData();
-        data.append("name", myform.elements.name.value);
-        data.append("phone", myform.elements.phone.value);
-        data.append("comment", myform.elements.comment.value);
+        data.append("name", myForm.elements.name.value);
+        data.append("phone", myForm.elements.phone.value);
+        data.append("comment", myForm.elements.comment.value);
         data.append("to", "my@gmail.com");
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
@@ -172,9 +172,7 @@ order.addEventListener('click', function (event) {
         });
     };
 });
-clean.addEventListener('click', function (event) {
-    event.preventDefault();
-});
+
 function validateForm(form) {
     let valid = true;
     if (!validateField(form.elements.name)) {

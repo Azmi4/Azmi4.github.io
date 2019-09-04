@@ -9,7 +9,7 @@
     justify-content: center;
     cursor: pointer;
 
-    &.active {
+    &.menu-active {
         .menu__title {
             color: $yellow;
         }

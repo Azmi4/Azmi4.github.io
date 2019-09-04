@@ -1330,17 +1330,17 @@ button {
 
 .accordeon__item {
   margin-bottom: 1.25rem; }
-  .accordeon__item.active {
+  .accordeon__item.ac-active {
     margin-bottom: 2.5rem; }
-    .accordeon__item.active .accordeon__title {
+    .accordeon__item.ac-active .accordeon__title {
       color: #f9b43b; }
-      .accordeon__item.active .accordeon__title:before {
+      .accordeon__item.ac-active .accordeon__title:before {
         content: "";
         border: 0.3125rem solid transparent;
         border-bottom: 0.3125rem solid;
         border-top: 0rem;
         margin-right: 0.625rem; }
-    .accordeon__item.active .accordeon__block {
+    .accordeon__item.ac-active .accordeon__block {
       height: auto; }
   @media screen and (max-width: 768px) {
     .accordeon__item {
@@ -1439,22 +1439,22 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer; }
-  .menu__item.active .menu__title {
+  .menu__item.menu-active .menu__title {
     color: #f9b43b; }
   @media screen and (max-width: 480px) {
-    .menu__item.active {
+    .menu__item.menu-active {
       width: 100%;
       position: absolute;
       left: 0;
       top: 0;
       height: 100%;
       z-index: 1; } }
-  .menu__item.active .menu__text {
+  .menu__item.menu-active .menu__text {
     padding: 3.75rem 2.5rem;
     line-height: 1.7;
     width: 100%; }
     @media screen and (max-width: 480px) {
-      .menu__item.active .menu__text {
+      .menu__item.menu-active .menu__text {
         width: 100%; } }
 
 .menu__title {
