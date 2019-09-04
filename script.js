@@ -149,44 +149,98 @@ menuAccordeon.addEventListener('click', function(e) {
 ////////////////////////////////////////////////////////////////////////////
 
 // Форма
-const myForm = document.querySelector('#myForm');
-const order = document.querySelector('#order');
+const myform = document.querySelector("#myform");
+const order = document.querySelector("#order");
 
-order.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    if (validateForm(myForm)) {
-        const data = {
-            name: myForm.elements.name.value,
-            phone: myForm.elements.name.value,
-            comment: myForm.elements.name.value
-        };
-
+order.addEventListener('click', function (event) {
+    event.preventDefault();
+    if (validateForm(myform)) {
+        let data = new FormData();
+        data.append("name", myform.elements.name.value);
+        data.append("phone", myform.elements.phone.value);
+        data.append("comment", myform.elements.comment.value);
+        data.append("to", "my@gmail.com");
         const xhr = new XMLHttpRequest();
+        xhr.responseType = 'json';
         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-        xhr.send(JSON.stringify(data));
-    }
+        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+        xhr.send(data);
+        xhr.addEventListener('load', () => {
+            if (xhr.response.status) {
+                console.log('отправка удалась')
+            }
+        });
+    };
 });
-
+clean.addEventListener('click', function (event) {
+    event.preventDefault();
+});
 function validateForm(form) {
     let valid = true;
-
     if (!validateField(form.elements.name)) {
         valid = false;
     }
-
     if (!validateField(form.elements.phone)) {
         valid = false;
     }
-
     if (!validateField(form.elements.comment)) {
         valid = false;
     }
-
     return valid;
 }
-
 function validateField(field) {
+    if (!field.checkValidity()) {
         field.nextElementSibling.textContent = field.validationMessage;
-        return field.checkValidity();
+        return false;
+    } else {
+        field.nextElementSibling.textContent = '';
+        return true;
+    }
 }
+
+
+
+
+
+
+// const myForm = document.querySelector('#myForm');
+// const order = document.querySelector('#order');
+
+// order.addEventListener('click', function (e) {
+//     e.preventDefault();
+
+//     if (validateForm(myForm)) {
+//         const data = {
+//             name: myForm.elements.name.value,
+//             phone: myForm.elements.name.value,
+//             comment: myForm.elements.name.value
+//         };
+
+//         const xhr = new XMLHttpRequest();
+//         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+//         xhr.send(JSON.stringify(data));
+//     }
+// });
+
+// function validateForm(form) {
+//     let valid = true;
+
+//     if (!validateField(form.elements.name)) {
+//         valid = false;
+//     }
+
+//     if (!validateField(form.elements.phone)) {
+//         valid = false;
+//     }
+
+//     if (!validateField(form.elements.comment)) {
+//         valid = false;
+//     }
+
+//     return valid;
+// }
+
+// function validateField(field) {
+//         field.nextElementSibling.textContent = field.validationMessage;
+//         return field.checkValidity();
+// }
