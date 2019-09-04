@@ -153,44 +153,44 @@ menuAccordeon.addEventListener('click', function(e) {
 ///////////////////////////////////////////////////////////////////////////
 
 // Форма
-// const myForm = document.querySelector('#myForm');
-// const order = document.querySelector('#order');
+const myForm = document.querySelector('#myForm');
+const order = document.querySelector('#order');
 
-// order.addEventListener('click', function (e) {
-//     e.preventDefault();
+order.addEventListener('click', function (e) {
+    e.preventDefault();
 
-//     if (validateForm(myForm)) {
-//         const data = {
-//             name: myForm.elements.name.value,
-//             phone: myForm.elements.name.value,
-//             comment: myForm.elements.name.value
-//         };
+    if (validateForm(myForm)) {
+        const data = {
+            name: myForm.elements.name.value,
+            phone: myForm.elements.name.value,
+            comment: myForm.elements.name.value
+        };
 
-//         const xhr = new XMLHttpRequest();
-//         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-//         xhr.send(JSON.stringify(data));
-//     }
-// });
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.send(JSON.stringify(data));
+    }
+});
 
-// function validateForm(form) {
-//     let valid = true;
+function validateForm(form) {
+    let valid = true;
 
-//     if (!validateField(form.elements.name)) {
-//         valid = false;
-//     }
+    if (!validateField(form.elements.name)) {
+        valid = false;
+    }
 
-//     if (!validateField(form.elements.phone)) {
-//         valid = false;
-//     }
+    if (!validateField(form.elements.phone)) {
+        valid = false;
+    }
 
-//     if (!validateField(form.elements.comment)) {
-//         valid = false;
-//     }
+    if (!validateField(form.elements.comment)) {
+        valid = false;
+    }
 
-//     return valid;
-// }
+    return valid;
+}
 
-// function validateField(field) {
-//         field.nextElementSibling.textContent = field.validationMessage;
-//         return field.checkValidity();
-// }
+function validateField(field) {
+        field.nextElementSibling.textContent = field.validationMessage;
+        return field.checkValidity();
+}
