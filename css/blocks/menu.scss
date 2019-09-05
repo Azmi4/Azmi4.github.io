@@ -27,6 +27,7 @@
             padding: rem(60px) rem(40px);
             line-height: 1.7;
             width: 100%;
+            transition: width .4s;
 
             @include phones {
                 width: 100%;

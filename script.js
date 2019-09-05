@@ -151,6 +151,7 @@ menuAccordeon.addEventListener('click', function(e) {
 // Форма
 const myForm = document.querySelector("#myForm");
 const order = document.querySelector("#order");
+const formRow = document.querySelector('.form__row-block');
 
 order.addEventListener('click', function (event) {
     event.preventDefault();
@@ -167,7 +168,29 @@ order.addEventListener('click', function (event) {
         xhr.send(data);
         xhr.addEventListener('load', () => {
             if (xhr.response.status) {
-                console.log('отправка удалась')
+                order.addEventListener('click', function() {
+                    const element = document.createElement('div');
+                    formRow.appendChild(element);
+                    element.classList.add('message__modal');
+
+                    const element2 = document.createElement('div');
+                    element.appendChild(element2);
+                    element2.classList.add('message__send');
+
+                    const element3 = document.createElement('div');
+                    element2.appendChild(element3);
+                    element3.classList.add('message__text');
+                    element3.textContent = 'Сообщение отправлено';
+
+                    const element4 = document.createElement('button');
+                    element2.appendChild(element4);
+                    element4.classList.add('btn');
+                    element4.textContent = 'Закрыть';
+
+                    element4.addEventListener('click', function() {
+                        formRow.removeChild(element);
+                    })
+                });
             }
         });
     };
@@ -195,50 +218,3 @@ function validateField(field) {
         return true;
     }
 }
-
-
-
-
-
-
-// const myForm = document.querySelector('#myForm');
-// const order = document.querySelector('#order');
-
-// order.addEventListener('click', function (e) {
-//     e.preventDefault();
-
-//     if (validateForm(myForm)) {
-//         const data = {
-//             name: myForm.elements.name.value,
-//             phone: myForm.elements.name.value,
-//             comment: myForm.elements.name.value
-//         };
-
-//         const xhr = new XMLHttpRequest();
-//         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-//         xhr.send(JSON.stringify(data));
-//     }
-// });
-
-// function validateForm(form) {
-//     let valid = true;
-
-//     if (!validateField(form.elements.name)) {
-//         valid = false;
-//     }
-
-//     if (!validateField(form.elements.phone)) {
-//         valid = false;
-//     }
-
-//     if (!validateField(form.elements.comment)) {
-//         valid = false;
-//     }
-
-//     return valid;
-// }
-
-// function validateField(field) {
-//         field.nextElementSibling.textContent = field.validationMessage;
-//         return field.checkValidity();
-// }

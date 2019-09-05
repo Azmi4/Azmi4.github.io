@@ -1452,7 +1452,10 @@ button {
   .menu__item.menu-active .menu__text {
     padding: 3.75rem 2.5rem;
     line-height: 1.7;
-    width: 100%; }
+    width: 100%;
+    -webkit-transition: width .4s;
+    -o-transition: width .4s;
+    transition: width .4s; }
     @media screen and (max-width: 480px) {
       .menu__item.menu-active .menu__text {
         width: 100%; } }
@@ -4718,3 +4721,30 @@ button {
     transition-duration: 1ms !important;
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important; } }
+
+.message__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.message__send {
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px; }
+
+.message__text {
+  color: black;
+  margin-bottom: 15px; }
