@@ -1,143 +1,134 @@
 .accordeon {
-    font-size: rem(14px);
-    color: #fff;
+  font-size: rem(14px);
+  color: #fff;
 
-    @include tablets {
-        text-align: center;
-    }
+  @include tablets {
+    text-align: center;
+  }
 
-    &_menu {
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        width: 70%;
-        justify-content: flex-end;
-
-        @include tablets {
-            width: 100%;
-        }
-
-        @include phones {
-            width: 100%;
-        }
-    }
-}
-
-
-
-.accordeon__item {
-    margin-bottom: rem(20px);
-
-    &.ac-active {
-        margin-bottom: rem(40px);
-
-        .accordeon__title {
-            color: $yellow;
-
-            &:before {
-                content: "";
-                border: rem(5px) solid transparent;
-                border-bottom: rem(5px) solid;
-                border-top: rem(0px);
-                margin-right: rem(10px);
-            }
-        }
-
-        .accordeon__block {
-            height: auto;
-        }
-    }
-
-    @include tablets {
-        text-align: center;
-    }
-}
-
-
-
-
-
-.accordeon__block {
+  &_menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
     display: flex;
-    height: 0;
-    overflow: hidden;
+    width: 70%;
+    justify-content: flex-end;
 
     @include tablets {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-.accordeon__title {
-    font-family: 'gagalinregular';
-    margin-bottom: rem(15px);
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    @include tablets {
-        display: inline-flex;
-        font-size: rem(24px);
+      width: 100%;
     }
 
     @include phones {
-        font-size: rem(15px);
+      width: 100%;
     }
+  }
+}
 
-    &::before {
+.accordeon__item {
+  margin-bottom: rem(20px);
+
+  &.ac-active {
+    margin-bottom: rem(40px);
+
+    .accordeon__title {
+      color: $yellow;
+
+      &:before {
         content: "";
         border: rem(5px) solid transparent;
-        border-top: rem(5px) solid $yellow;
-        border-bottom: rem(0px);
+        border-bottom: rem(5px) solid;
+        border-top: rem(0px);
         margin-right: rem(10px);
+      }
     }
+    .accordeon__block {
+      height: auto;
+    }
+  }
+
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.accordeon__block {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.accordeon__title {
+  font-family: "gagalinregular";
+  margin-bottom: rem(15px);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @include tablets {
+    display: inline-flex;
+    font-size: rem(24px);
+  }
+
+  @include phones {
+    font-size: rem(15px);
+  }
+
+  &::before {
+    content: "";
+    border: rem(5px) solid transparent;
+    border-top: rem(5px) solid $yellow;
+    border-bottom: rem(0px);
+    margin-right: rem(10px);
+  }
 }
 
 .accordeon__photo {
-    background: url('../../image/photo1.jpg') center no-repeat / cover;
-    width: rem(100px);
-    height: rem(100px);
-    border-radius: 50%;
-    flex: 0 0 auto;
+  background: url("../../image/photo1.jpg") center no-repeat / cover;
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
+  flex: 0 0 auto;
 
-    @include phones {
-        width: rem(80px);
-        height: rem(80px);
-    }
+  @include phones {
+    width: rem(80px);
+    height: rem(80px);
+  }
 }
 
 .accordeon__desc {
-    font-family: 'ubuntulight';
-    margin-left: rem(20px);
+  font-family: "ubuntulight";
+  margin-left: rem(20px);
 
-    @include tablets {
-        margin-left: 0;
-        margin-top: rem(20px);
-    }
+  @include tablets {
+    margin-left: 0;
+    margin-top: rem(20px);
+  }
 
-    @include phones {
-        margin-top: rem(5px);
-        font-size: rem(13px);
-    }
-    
+  @include phones {
+    margin-top: rem(5px);
+    font-size: rem(13px);
+  }
 }
 
 .accordeon__subtitle {
-    font-family: 'ubuntubold';
-    margin-bottom: rem(15px);
+  font-family: "ubuntubold";
+  margin-bottom: rem(15px);
 }
 
 .accordeon__text {
-    line-height: 1.7;
+  line-height: 1.7;
 
-    @include tablets {
-        padding: 0 26%;
-    }
+  @include tablets {
+    padding: 0 26%;
+  }
 
-    @include phones {
-        padding: 0 5%;
-    }
+  @include phones {
+    padding: 0 5%;
+  }
 }

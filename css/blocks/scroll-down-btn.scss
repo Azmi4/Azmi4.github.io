@@ -1,20 +1,20 @@
 .scroll-down-btn {
-    width: rem(55px);
-    height: rem(25px);
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: rem(40px);
-    outline: none;
+  width: rem(55px);
+  height: rem(25px);
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: rem(40px);
+  outline: none;
 }
 
 .scroll-down {
-    width: rem(28px);
-    height: rem(14px);
+  width: rem(28px);
+  height: rem(14px);
 
-    &:hover {
-        width: rem(40px);
-        height: rem(20px);
-    }
+  &:hover {
+    width: rem(40px);
+    height: rem(20px);
+  }
 }

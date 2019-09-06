@@ -1,191 +1,187 @@
 .form {
-    margin-top: rem(48px);
+  margin-top: rem(48px);
 
-    @include tablets {
-        margin-top: rem(50px);   
-    }
+  @include tablets {
+    margin-top: rem(50px);
+  }
 
-    @include phones {
-        margin-top: rem(10px);
-    }
+  @include phones {
+    margin-top: rem(10px);
+  }
 }
 
 .form__elem {
-    display: flex;
-    font-family: 'ubuntulight';
-    font-size: rem(14px);
+  display: flex;
+  font-family: "ubuntulight";
+  font-size: rem(14px);
 
-    @include tablets {
-        flex-direction: column;
-        padding: 0 17%;   
-    }
+  @include tablets {
+    flex-direction: column;
+    padding: 0 17%;
+  }
 
-    @include phones {
-        padding: 0;
-        font-size: rem(13px);
-    }
+  @include phones {
+    padding: 0;
+    font-size: rem(13px);
+  }
 }
 
 .form__column {
-    flex: 1;
-    margin-right: rem(20px);
+  flex: 1;
+  margin-right: rem(20px);
 
-    @include tablets {
-        margin-right: 0;   
-    }
-    
-    &:last-child {
-        margin-right: 0;
-    }
+  @include tablets {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .form__row-block {
-    @include phones {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .form__row {
-    display: flex;
-    margin-bottom: rem(18px);
+  display: flex;
+  margin-bottom: rem(18px);
 
-    &_pp {
-        @include tablets {
-            margin-bottom: 7%;
-        }
+  &_pp {
+    @include tablets {
+      margin-bottom: 7%;
     }
+  }
 
-    @include phones {
-        margin-bottom: 6%;
-    }
+  @include phones {
+    margin-bottom: 6%;
+  }
 }
 
 .form__block {
-    flex: 1;
-    margin-right: rem(20px);
-    display: block;
+  flex: 1;
+  margin-right: rem(20px);
+  display: block;
 
-    &:last-child {
-        margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 
-    &_margin-on-mobile {
-        @include phones {
-            margin-right: 0;
-        }
+  &_margin-on-mobile {
+    @include phones {
+      margin-right: 0;
     }
+  }
 
-    &_hidden-on-mobile {
-        @include phones {
-            display: none;
-        }
+  &_hidden-on-mobile {
+    @include phones {
+      display: none;
     }
+  }
 }
 
 .form__block-title {
-    margin-bottom: rem(5px);
+  margin-bottom: rem(5px);
 }
 
 .form__input {
-    background: #fff;
-    border-radius: rem(4px);
-    border: none;
-    padding: rem(10px) rem(21px);
-    width: 100%;
-    border: rem(1px) solid transparent;
-    outline: none;
+  background: #fff;
+  border-radius: rem(4px);
+  border: none;
+  padding: rem(10px) rem(21px);
+  width: 100%;
+  border: rem(1px) solid transparent;
+  outline: none;
 
-    &:focus {
-        border-color: $yellow;
-    }
+  &:focus {
+    border-color: $yellow;
+  }
 
-    &_textarea {
-        resize: none;
-        height: rem(110px);
-    }
+  &_textarea {
+    resize: none;
+    height: rem(110px);
+  }
 }
-
-
 
 .form__radio {
-    margin-right: rem(20px);
-    padding-left: rem(25px);
-    position: relative;
-    cursor: pointer;
+  margin-right: rem(20px);
+  padding-left: rem(25px);
+  position: relative;
+  cursor: pointer;
 }
 
-.form__radio input[type="radio"]{
-    display: none;
+.form__radio input[type="radio"] {
+  display: none;
 }
 
 .form__radio span {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+
+  &:after {
+    content: "";
+    height: 7px;
+    width: 7px;
+    background: $orange;
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-
-    &:after {
-        content: "";
-        height: 7px;
-        width: 7px;
-        background: $orange;
-        display: block;
-        position: absolute;
-        left: 4px;
-        top: 4px;
-        border-radius: 50%;
-        transform: scale(0);
-        transition: 200ms ease-in-out 0s;
-    }
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 200ms ease-in-out 0s;
+  }
 }
 
 .form__radio input[type="radio"]:checked ~ span:after {
-    transform: scale(1);
+  transform: scale(1);
 }
 
-
-
 .form__checkbox {
-    display: block;
-    cursor: pointer;
-    display: flex;
+  display: block;
+  cursor: pointer;
+  display: flex;
 }
 
 .form__checkbox input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 .form__checkbox span {
-    display: inline-block;
-    height: rem(15px);
-    width: rem(15px);
-    background: #fff;
-    margin-right: rem(10px);
-    border-radius: rem(3px);
-    position: relative;
+  display: inline-block;
+  height: rem(15px);
+  width: rem(15px);
+  background: #fff;
+  margin-right: rem(10px);
+  border-radius: rem(3px);
+  position: relative;
 
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: url('../../image/checkmark2.png') center center no-repeat;
-        transform: scale(0);
-    }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url("../../image/checkmark2.png") center center no-repeat;
+    transform: scale(0);
+  }
 }
 
 .form__checkbox input[type="checkbox"]:checked ~ span::before {
-    transform: scale(1);
+  transform: scale(1);
 }

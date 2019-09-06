@@ -1,167 +1,163 @@
 .composition__block {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    @include tablets {
-        flex-direction: unset;
-        width: 100%;
-    }
+  @include tablets {
+    flex-direction: unset;
+    width: 100%;
+  }
 }
 
 .composition {
-   width: rem(90px);
-   height: rem(90px);
-   background: #f08c33;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: rem(5px);
-   flex-direction: column;
-   margin-left: rem(10px);
-   position: relative;
-   text-decoration: none;
+  width: rem(90px);
+  height: rem(90px);
+  background: #f08c33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: rem(5px);
+  flex-direction: column;
+  margin-left: rem(10px);
+  position: relative;
+  text-decoration: none;
 
-   &.active {
-       .composition__list {
-            opacity: .9;
-            left: rem(90px);
-       }
-   }
+  &.active {
+    .composition__list {
+      opacity: 0.9;
+      left: rem(90px);
+    }
+  }
 
-   @include tablets {
-       margin-left: 10%;
-   }
+  @include tablets {
+    margin-left: 10%;
+  }
 
-   @include phones {
-       margin: 0;
-       flex: 0 0 auto;
-   }
+  @include phones {
+    margin: 0;
+    flex: 0 0 auto;
+  }
 }
 
 .composition__burger {
-    width: rem(50px);
-    height: rem(50px);
+  width: rem(50px);
+  height: rem(50px);
 }
 
 .composition__subtitle {
-    color: white;
+  color: white;
 }
 
 .calories__kkal {
-    width: rem(55px);
-    height: rem(55px);
-    margin-left: rem(30px);
+  width: rem(55px);
+  height: rem(55px);
+  margin-left: rem(30px);
 }
 
 .composition__list {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: rem(9999px);
-    background: #fff;
-    border-radius: rem(5px);
-    color: #000;
-    padding: rem(15px);
-    font-family: 'ubuntubold';
-    font-size: rem(14px);
-    width: rem(300px);
-    transition: opacity .4s;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: rem(9999px);
+  background: #fff;
+  border-radius: rem(5px);
+  color: #000;
+  padding: rem(15px);
+  font-family: "ubuntubold";
+  font-size: rem(14px);
+  width: rem(300px);
+  transition: opacity 0.4s;
 
-    @include phones {
-        width: rem(168px);
-        font-size: rem(8px);
-    }
+  @include phones {
+    width: rem(168px);
+    font-size: rem(8px);
+  }
 }
 
 .composition__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: rem(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: rem(10px);
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .composition__min-block {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .composition__text {
-    margin-left: rem(25px);
+  margin-left: rem(25px);
 
-    @include phones {
-        margin-left: rem(12px);
-        
-    }
+  @include phones {
+    margin-left: rem(12px);
+  }
 }
 
-
-
-
 .composition__beef {
-    width: rem(50px);
-    height: rem(40px);
+  width: rem(50px);
+  height: rem(40px);
 
-    @include phones {
-        width: rem(30px);
-        height: rem(20px);
-    }
+  @include phones {
+    width: rem(30px);
+    height: rem(20px);
+  }
 }
 
 .composition__buns {
-    width: rem(50px);
-    height: rem(46px);
+  width: rem(50px);
+  height: rem(46px);
 
-    @include phones {
-        width: rem(30px);
-        height: rem(23px);
-    }
+  @include phones {
+    width: rem(30px);
+    height: rem(23px);
+  }
 }
 
 .composition__salad {
-    width: rem(50px);
-    height: rem(38px);
+  width: rem(50px);
+  height: rem(38px);
 
-    @include phones {
-        width: rem(30px);
-        height: rem(20px);
-    }
+  @include phones {
+    width: rem(30px);
+    height: rem(20px);
+  }
 }
 
 .composition__sauce {
-    width: rem(50px);
-    height: rem(38px);
+  width: rem(50px);
+  height: rem(38px);
 
-    @include phones {
-        width: rem(30px);
-        height: rem(20px);
-    }
+  @include phones {
+    width: rem(30px);
+    height: rem(20px);
+  }
 }
 
 .composition__cucumber {
-    width: rem(50px);
-    height: rem(31px);
+  width: rem(50px);
+  height: rem(31px);
 
-    @include phones {
-        width: rem(30px);
-        height: rem(20px);
-    }
+  @include phones {
+    width: rem(30px);
+    height: rem(20px);
+  }
 }
 
 .composition__cheese {
-    width: rem(50px);
-    height: rem(33px);
+  width: rem(50px);
+  height: rem(33px);
 
-    @include phones {
-        width: rem(30px);
-        height: rem(20px);
-    }
+  @include phones {
+    width: rem(30px);
+    height: rem(20px);
+  }
 }

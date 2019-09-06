@@ -1,24 +1,24 @@
 .btn {
-    padding: rem(12px) rem(15px);
-    border-radius: rem(5px);
-    background: $orange;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: rem(13px);
-    font-family: 'ubuntumedium';
-    outline: none;
+  padding: rem(12px) rem(15px);
+  border-radius: rem(5px);
+  background: $orange;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: rem(13px);
+  font-family: "ubuntumedium";
+  outline: none;
 
-    &__modal {
-        display: none;
-    }
+  &__modal {
+    display: none;
+  }
 
-    @include phones {
-        padding: rem(12px) rem(20px);
-    }
+  @include phones {
+    padding: rem(12px) rem(20px);
+  }
 
-    &_color {
-        &_black {
-            background: $black;
-        }
+  &_color {
+    &_black {
+      background: $black;
     }
+  }
 }

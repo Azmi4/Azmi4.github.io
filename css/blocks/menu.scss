@@ -1,97 +1,99 @@
 .menu {
-    background: url('../../image/bg/Rectangle\ 4.jpg') center center no-repeat / cover;
-    position: relative;
-    color: #fff;
+  background: url("../../image/bg/Rectangle\ 4.jpg") center center no-repeat /
+    cover;
+  position: relative;
+  color: #fff;
 }
 
 .menu__item {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 
-    &.menu-active {
-        .menu__title {
-            color: $yellow;
-        }
-
-        @include phones {
-            width: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            z-index: 1;
-        }
-
-        .menu__text {
-            padding: rem(60px) rem(40px);
-            line-height: 1.7;
-            width: 100%;
-            transition: width .4s;
-
-            @include phones {
-                width: 100%;
-            }
-        }
-    }
-}
-
-
-
-.menu__title {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: rem(40px);
-    font-family: 'gagalinregular';
-    width: rem(81px);
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    position: relative;
-
-    @include tablets {
-        width: rem(83px);
+  &.menu-active {
+    .menu__title {
+      color: $yellow;
     }
 
     @include phones {
-        width: rem(48px);
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      z-index: 1;
     }
 
-    &::before {
-        content: "";
-        position: absolute;
+    .menu__text {
+      padding: rem(60px) rem(40px);
+      line-height: 1.7;
+      width: 100%;
+      transition: width 0.4s;
+
+      @include phones {
         width: 100%;
-        height: 100%;
-        background: rgba(#4c4e50, .6);
-        z-index: -1;
+      }
     }
+  }
+}
 
-    &_one {
-        background: url('../../image/bg/photo-one.jpg') center center no-repeat / cover;
-    }
+.menu__title {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: rem(40px);
+  font-family: "gagalinregular";
+  width: rem(81px);
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  position: relative;
 
-    &_two {
-        background: url('../../image/bg/photo-two.jpg') right center no-repeat / cover;
-    }
+  @include tablets {
+    width: rem(83px);
+  }
 
-    &_three {
-        background: url('../../image/bg/photo-thee.jpg') right center no-repeat / cover;
-    }
+  @include phones {
+    width: rem(48px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(#4c4e50, 0.6);
+    z-index: -1;
+  }
+
+  &_one {
+    background: url("../../image/bg/photo-one.jpg") center center no-repeat /
+      cover;
+  }
+
+  &_two {
+    background: url("../../image/bg/photo-two.jpg") right center no-repeat /
+      cover;
+  }
+
+  &_three {
+    background: url("../../image/bg/photo-thee.jpg") right center no-repeat /
+      cover;
+  }
 }
 
 .menu__subtitle {
-    margin-top: rem(40px);
-    
-    @include phones {
-        font-size: rem(30px); 
-    }
+  margin-top: rem(40px);
+
+  @include phones {
+    font-size: rem(30px);
+  }
 }
 
 .menu__text {
-    width: 0;
-    overflow: hidden;
-    background: rgba(#4c4e50, .8);
-    font-family: 'ubuntulight';
-    font-size: rem(14px);
+  width: 0;
+  overflow: hidden;
+  background: rgba(#4c4e50, 0.8);
+  font-family: "ubuntulight";
+  font-size: rem(14px);
 }

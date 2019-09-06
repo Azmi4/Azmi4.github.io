@@ -1,28 +1,28 @@
 .team {
-    background: url('../../image/bg/comanda.jpg') center top no-repeat / cover;
+  background: url("../../image/bg/comanda.jpg") center top no-repeat / cover;
 }
 
 .right__team {
-    width: 100%;
-    height: 100%;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .team__block {
-    height: 100%;
-    background: rgba(#323436, .9);
-    position: absolute;
-    top: 0;
-    left: 60%;
-    padding: rem(110px) rem(95px);
+  height: 100%;
+  background: rgba(#323436, 0.9);
+  position: absolute;
+  top: 0;
+  left: 60%;
+  padding: rem(110px) rem(95px);
 
-    @include tablets {
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-    }
+  @include tablets {
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
 }

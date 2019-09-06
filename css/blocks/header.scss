@@ -1,27 +1,27 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: rem(13px);
-    font-family: 'ubuntumedium';
-    padding-top: rem(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: rem(13px);
+  font-family: "ubuntumedium";
+  padding-top: rem(10px);
 }
 
 .header__logo {
-    margin: rem(2px) 0 0 rem(3px);
-    width: rem(92px);
-    height: rem(69px);
-    flex: 0 0 auto;
-    z-index: 5;
+  margin: rem(2px) 0 0 rem(3px);
+  width: rem(92px);
+  height: rem(69px);
+  flex: 0 0 auto;
+  z-index: 5;
 
-    @include phones {
-        width: rem(103px);
-        height: rem(80px);
-        margin: rem(3px) 0 0 rem(8px);
-    }
+  @include phones {
+    width: rem(103px);
+    height: rem(80px);
+    margin: rem(3px) 0 0 rem(8px);
+  }
 }
 
 .header__buttons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }

@@ -1,54 +1,54 @@
 .contacts {
-    color: #fff;
-    font-size: rem(14px);
-    font-family: 'ubuntulight';
-    display: flex;
-    padding: rem(10px);
+  color: #fff;
+  font-size: rem(14px);
+  font-family: "ubuntulight";
+  display: flex;
+  padding: rem(10px);
 
-    @include phones {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: rem(16px);
-    }
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(16px);
+  }
 }
 
 .contacts__mine {
-    flex: 1;
+  flex: 1;
 
-    @include tablets {
-        margin-left: 2%;
-    }
+  @include tablets {
+    margin-left: 2%;
+  }
 
-    @include phones {
-        margin-left: 0;
-        text-align: center;
-        padding-top: 2%;
-    }
+  @include phones {
+    margin-left: 0;
+    text-align: center;
+    padding-top: 2%;
+  }
 }
 
 .contacts__address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .contacts__phone {
-    margin-top: rem(10px);
+  margin-top: rem(10px);
 }
 
 .contacts__phone-link {
-    text-decoration: none;
-    color: $orange;
-    font-family: 'ubuntubold';
+  text-decoration: none;
+  color: $orange;
+  font-family: "ubuntubold";
 }
 
 .contacts__phone-icon {
-    width: rem(11px);
-    height: rem(11px);
-    margin-right: rem(10px);
+  width: rem(11px);
+  height: rem(11px);
+  margin-right: rem(10px);
 
-    @include phones {
-        width: rem(15px);
-        height: rem(15px);
-    }
+  @include phones {
+    width: rem(15px);
+    height: rem(15px);
+  }
 }

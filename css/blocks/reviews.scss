@@ -1,146 +1,146 @@
 .reviews__list {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .reviews__item {
-    width: 25%;
-    height: 50%;
-    position: relative;
+  width: 25%;
+  height: 50%;
+  position: relative;
 
-    @include tablets {
-        width: 50%;
-        height: 25%;
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
+
+  &:hover {
+    .reviews__hover {
+      opacity: 1;
     }
-    
-    &:hover {
-        .reviews__hover {
-            opacity: 1;
-        }
-    }
+  }
 }
 
 .reviews__img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .reviews__hover {
-    position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: rem(14px);
+  padding: rem(50px) rem(23px);
+  background: rgba(#444646, 0.5);
+  opacity: 0;
+  transition: opacity 0.4s;
+
+  &.active {
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    font-size: rem(14px);
-    padding: rem(50px) rem(23px);
-    background: rgba(#444646, .5);
-    opacity: 0;
-    transition: opacity .4s;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($black, 0.9);
+    opacity: 1;
+    z-index: 2;
+    padding: 0 31%;
 
-    &.active {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
+    .reviews__modal {
+      padding: rem(30px) rem(20px);
+      background: #fff;
+      border-radius: rem(5px);
+      color: #000;
+      position: relative;
+      .reviews__title {
+        color: #000;
+      }
+      .reviews__text {
+        color: #000;
+        margin: 4% 0 0 0;
+      }
+    }
+
+    .btn {
+      display: none;
+
+      &__modal {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba($black, .9);
-        opacity: 1;
-        z-index: 2;
-        padding: 0 31%;
-
-        .reviews__modal {
-            padding: rem(30px) rem(20px);
-            background: #fff;
-            border-radius: rem(5px);
-            color: #000;
-            position: relative;
-            .reviews__title {
-                color: #000;
-            }
-            .reviews__text {
-                color: #000;
-                margin: 4% 0 0 0;
-            }
-        }
-
-        .btn {
-            display: none;
-
-            &__modal {
-                display: flex;
-                position: absolute;
-                top: rem(10px);
-                right: rem(10px);
-                height: rem(15px);
-                width: rem(15px);
-                padding: 0;
-                outline: none;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 45%;
-                    width: 100%;
-                    height: 3px;
-                    background-color: $orange;
-                    border-radius: 4px;
-                    transform: rotate(45deg);
-                }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 45%;
-                    width: 100%;
-                    height: 3px;
-                    background-color: $orange;
-                    border-radius: 4px;
-                    transform: rotate(-45deg);
-                }
-            }
-        }
-    }
-
-    @include tablets {
-        text-align: center;
-    }
-
-    @include phones {
+        position: absolute;
+        top: rem(10px);
+        right: rem(10px);
+        height: rem(15px);
+        width: rem(15px);
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        outline: none;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 45%;
+          width: 100%;
+          height: 3px;
+          background-color: $orange;
+          border-radius: 4px;
+          transform: rotate(45deg);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 45%;
+          width: 100%;
+          height: 3px;
+          background-color: $orange;
+          border-radius: 4px;
+          transform: rotate(-45deg);
+        }
+      }
     }
+  }
+
+  @include tablets {
+    text-align: center;
+  }
+
+  @include phones {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .reviews__title {
-    font-family: 'gagalinregular';
-    color: #fff;
-    letter-spacing: rem(1px);
-    
-    @include phones {
-        font-size: rem(27px);
-        padding-bottom: 15%;
-    }
+  font-family: "gagalinregular";
+  color: #fff;
+  letter-spacing: rem(1px);
+
+  @include phones {
+    font-size: rem(27px);
+    padding-bottom: 15%;
+  }
 }
 
 .reviews__text {
-    color: #e4e4e4;
-    font-family: 'ubuntulight';
-    line-height: 1.7;
-    margin-top: rem(30px);
-    margin-bottom: rem(15px);
+  color: #e4e4e4;
+  font-family: "ubuntulight";
+  line-height: 1.7;
+  margin-top: rem(30px);
+  margin-bottom: rem(15px);
 
-    @include tablets {
-        margin-top: 5%;
-    }
+  @include tablets {
+    margin-top: 5%;
+  }
 
-    @include phones {
-        display: none;
-    }
+  @include phones {
+    display: none;
+  }
 }

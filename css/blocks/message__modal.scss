@@ -1,23 +1,23 @@
 .message__modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(black, .9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(black, 0.9);
 }
 
 .message__send {
-    padding: 15px;
-    background-color: white;
-    text-align: center;
-    border-radius: 5px;
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .message__text {
-    color: black;
-    margin-bottom: 15px;
+  color: black;
+  margin-bottom: 15px;
 }

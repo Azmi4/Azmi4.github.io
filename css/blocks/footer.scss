@@ -1,10 +1,11 @@
 .footer {
-    background: url('../../image/bg/Rectangle\ 9.jpg') center center / cover no-repeat;
-    height: rem(60px);
-    position: absolute;
-    bottom: 0;
+  background: url("../../image/bg/Rectangle\ 9.jpg") center center / cover
+    no-repeat;
+  height: rem(60px);
+  position: absolute;
+  bottom: 0;
 
-    @include phones {
-        height: 18vh;
-    }
+  @include phones {
+    height: 18vh;
+  }
 }

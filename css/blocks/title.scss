@@ -1,62 +1,62 @@
 .title {
-    font-size: rem(72px);
-    font-family: 'gagalinregular';
-    color: $yellow;
-    line-height: 1;
+  font-size: rem(72px);
+  font-family: "gagalinregular";
+  color: $yellow;
+  line-height: 1;
+
+  @include phones {
+    font-size: rem(55px);
+  }
+
+  &_color {
+    &_black {
+      color: $black;
+      font-size: rem(72px);
+    }
+
+    &_white {
+      color: white;
+    }
+  }
+
+  &_centered {
+    text-align: center;
+  }
+
+  &_team {
+    margin-bottom: rem(50px);
 
     @include phones {
-        font-size: rem(55px);
+      margin-bottom: rem(33px);
+      font-size: rem(50px);
     }
-
-    &_color {
-        &_black {
-            color: $black;
-            font-size: rem(72px);
-        }
-
-        &_white {
-            color: white;
-        }
-    }
-    
-    &_centered {
-        text-align: center;
-    }
-
-    &_team {
-        margin-bottom: rem(50px);
-
-        @include phones {
-            margin-bottom: rem(33px);
-            font-size: rem(50px);
-        }
-    }
+  }
 }
 
 .title__menu {
-    margin: 7.7% 0 0 16.5%;
+  margin: 7.7% 0 0 16.5%;
 
-    @include tablets {
-        margin-left: 3%;
-        margin-top: 14%;
-    }
+  @include tablets {
+    margin-left: 3%;
+    margin-top: 14%;
+  }
 
-    @include phones {
-        font-size: rem(53px);
-        margin-left: 14%;
-        margin-top: 12%;
-    }
+  @include phones {
+    font-size: rem(53px);
+    margin-left: 14%;
+    margin-top: 12%;
+  }
 }
 
 .title__order {
-    @include phones {
-        font-size: rem(40px);
-    }
+  @include phones {
+    font-size: rem(40px);
+  }
 }
 
 .title__beef {
-    @include phones {
-        font-size: rem(35px);
-        padding: 0 6%
-    }
+  @include phones {
+    font-size: rem(35px);
+    padding: 0 6%;
+  }
 }

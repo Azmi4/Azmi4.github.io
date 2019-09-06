@@ -1,91 +1,91 @@
 .social__networks {
-    flex: 1;
+  flex: 1;
 
-    @include phones {
-        padding-top: 3%;
-    }
+  @include phones {
+    padding-top: 3%;
+  }
 }
 
 .social__list {
-    display: flex;
-    justify-content: flex-end;
-    padding: rem(10px) rem(80px);
+  display: flex;
+  justify-content: flex-end;
+  padding: rem(10px) rem(80px);
 
-    @include tablets {
-        padding-right: 2%;
-    }
+  @include tablets {
+    padding-right: 2%;
+  }
 
-    @include phones {
-        padding: 0;
-    }
+  @include phones {
+    padding: 0;
+  }
 }
 
 .social__item {
-    margin-left: rem(20px);
-    display: flex;
-    align-items: center;
+  margin-left: rem(20px);
+  display: flex;
+  align-items: center;
 }
 
 .social__vk {
-    width: rem(20px);
-    height: rem(20px);
-    fill: $grey;
+  width: rem(20px);
+  height: rem(20px);
+  fill: $grey;
 
-    &:hover {
-        fill: white;
-        transition: .3s;
-    }
+  &:hover {
+    fill: white;
+    transition: 0.3s;
+  }
 
-    @include phones {
-        width: rem(27px);
-        height: rem(27px);
-    }
+  @include phones {
+    width: rem(27px);
+    height: rem(27px);
+  }
 }
 
 .social__fb {
-    width: rem(16px);
-    height: rem(16px);
-    fill: $grey;
+  width: rem(16px);
+  height: rem(16px);
+  fill: $grey;
 
-    &:hover {
-        fill: white;
-        transition: .3s;
-    }
+  &:hover {
+    fill: white;
+    transition: 0.3s;
+  }
 
-    @include phones {
-        width: rem(23px);
-        height: rem(23px);
-    }
+  @include phones {
+    width: rem(23px);
+    height: rem(23px);
+  }
 }
 
 .social__inst {
-    width: rem(16px);
-    height: rem(16px);
-    fill: $grey;
+  width: rem(16px);
+  height: rem(16px);
+  fill: $grey;
 
-    &:hover {
-        fill: white;
-        transition: .3s;
-    }
+  &:hover {
+    fill: white;
+    transition: 0.3s;
+  }
 
-    @include phones {
-        width: rem(23px);
-        height: rem(23px);
-    }
+  @include phones {
+    width: rem(23px);
+    height: rem(23px);
+  }
 }
 
 .social__twit {
-    width: rem(18px);
-    height: rem(18px);
-    fill: $grey;
+  width: rem(18px);
+  height: rem(18px);
+  fill: $grey;
 
-    &:hover {
-        fill: white;
-        transition: .3s;
-    }
+  &:hover {
+    fill: white;
+    transition: 0.3s;
+  }
 
-    @include phones {
-        width: rem(23px);
-        height: rem(23px);
-    }
+  @include phones {
+    width: rem(23px);
+    height: rem(23px);
+  }
 }

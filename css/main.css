@@ -308,37 +308,37 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'gagalinregular';
+  font-family: "gagalinregular";
   src: url("../../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../../fonts/gagalin-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'lifehackmedium';
+  font-family: "lifehackmedium";
   src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'ubuntubold';
+  font-family: "ubuntubold";
   src: url("../../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-b-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'ubuntulight';
+  font-family: "ubuntulight";
   src: url("../../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'ubuntumedium';
+  font-family: "ubuntumedium";
   src: url("../../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'ubunturegular';
+  font-family: "ubunturegular";
   src: url("../../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
@@ -470,9 +470,9 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-flex: .8;
-  -ms-flex: .8;
-  flex: .8;
+  -webkit-box-flex: 0.8;
+  -ms-flex: 0.8;
+  flex: 0.8;
   margin: auto 0;
   margin-left: 1.25rem; }
   @media screen and (max-width: 768px) {
@@ -507,7 +507,7 @@ button {
 
 .hero__subtitle {
   font-size: 4.0625rem;
-  font-family: 'lifehackmedium';
+  font-family: "lifehackmedium";
   color: #fff;
   line-height: 1;
   margin-top: 1.25rem; }
@@ -530,7 +530,7 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 0.8125rem;
-  font-family: 'ubuntumedium';
+  font-family: "ubuntumedium";
   padding-top: 0.625rem; }
 
 .header__logo {
@@ -650,7 +650,7 @@ button {
   text-transform: uppercase;
   color: #fff;
   font-size: 0.8125rem;
-  font-family: 'ubuntumedium';
+  font-family: "ubuntumedium";
   outline: none; }
   .btn__modal {
     display: none; }
@@ -681,7 +681,7 @@ button {
 
 .title {
   font-size: 4.5rem;
-  font-family: 'gagalinregular';
+  font-family: "gagalinregular";
   color: #f9b43b;
   line-height: 1; }
   @media screen and (max-width: 480px) {
@@ -816,13 +816,13 @@ button {
 
 .best__subtitle {
   font-size: 1.5rem;
-  font-family: 'lifehackmedium'; }
+  font-family: "lifehackmedium"; }
   @media screen and (max-width: 480px) {
     .best__subtitle {
       font-size: 1.125rem; } }
 
 .best__desc-text {
-  font-family: 'ubuntulight';
+  font-family: "ubuntulight";
   font-size: 0.875rem;
   line-height: 1.7;
   margin-top: 0.9375rem;
@@ -867,9 +867,9 @@ button {
   padding: 3.125rem 1.4375rem;
   background: rgba(68, 70, 70, 0.5);
   opacity: 0;
-  -webkit-transition: opacity .4s;
-  -o-transition: opacity .4s;
-  transition: opacity .4s; }
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s; }
   .reviews__hover.active {
     position: fixed;
     top: 0;
@@ -956,7 +956,7 @@ button {
       justify-content: center; } }
 
 .reviews__title {
-  font-family: 'gagalinregular';
+  font-family: "gagalinregular";
   color: #fff;
   letter-spacing: 0.0625rem; }
   @media screen and (max-width: 480px) {
@@ -966,7 +966,7 @@ button {
 
 .reviews__text {
   color: #e4e4e4;
-  font-family: 'ubuntulight';
+  font-family: "ubuntulight";
   line-height: 1.7;
   margin-top: 1.875rem;
   margin-bottom: 0.9375rem; }
@@ -1002,9 +1002,9 @@ button {
     height: 1rem;
     border-radius: 50%;
     border: 0.0625rem solid #fff;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .fixed-menu__dot:before {
     content: "";
     width: 0.375rem;
@@ -1034,7 +1034,7 @@ button {
 .contacts {
   color: #fff;
   font-size: 0.875rem;
-  font-family: 'ubuntulight';
+  font-family: "ubuntulight";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1078,7 +1078,7 @@ button {
 .contacts__phone-link {
   text-decoration: none;
   color: #e45028;
-  font-family: 'ubuntubold'; }
+  font-family: "ubuntubold"; }
 
 .contacts__phone-icon {
   width: 0.6875rem;
@@ -1106,7 +1106,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'ubuntulight';
+  font-family: "ubuntulight";
   font-size: 0.875rem; }
   @media screen and (max-width: 768px) {
     .form__elem {
@@ -1363,7 +1363,7 @@ button {
       align-items: center; } }
 
 .accordeon__title {
-  font-family: 'gagalinregular';
+  font-family: "gagalinregular";
   margin-bottom: 0.9375rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1402,7 +1402,7 @@ button {
       height: 5rem; } }
 
 .accordeon__desc {
-  font-family: 'ubuntulight';
+  font-family: "ubuntulight";
   margin-left: 1.25rem; }
   @media screen and (max-width: 768px) {
     .accordeon__desc {
@@ -1414,7 +1414,7 @@ button {
       font-size: 0.8125rem; } }
 
 .accordeon__subtitle {
-  font-family: 'ubuntubold';
+  font-family: "ubuntubold";
   margin-bottom: 0.9375rem; }
 
 .accordeon__text {
@@ -1453,9 +1453,9 @@ button {
     padding: 3.75rem 2.5rem;
     line-height: 1.7;
     width: 100%;
-    -webkit-transition: width .4s;
-    -o-transition: width .4s;
-    transition: width .4s; }
+    -webkit-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    transition: width 0.4s; }
     @media screen and (max-width: 480px) {
       .menu__item.menu-active .menu__text {
         width: 100%; } }
@@ -1468,7 +1468,7 @@ button {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   font-size: 2.5rem;
-  font-family: 'gagalinregular';
+  font-family: "gagalinregular";
   width: 5.0625rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1509,7 +1509,7 @@ button {
   width: 0;
   overflow: hidden;
   background: rgba(76, 78, 80, 0.8);
-  font-family: 'ubuntulight';
+  font-family: "ubuntulight";
   font-size: 0.875rem; }
 
 .maps {
@@ -1554,9 +1554,9 @@ button {
   fill: #5a5a5a; }
   .social__vk:hover {
     fill: white;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   @media screen and (max-width: 480px) {
     .social__vk {
       width: 1.6875rem;
@@ -1568,9 +1568,9 @@ button {
   fill: #5a5a5a; }
   .social__fb:hover {
     fill: white;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   @media screen and (max-width: 480px) {
     .social__fb {
       width: 1.4375rem;
@@ -1582,9 +1582,9 @@ button {
   fill: #5a5a5a; }
   .social__inst:hover {
     fill: white;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   @media screen and (max-width: 480px) {
     .social__inst {
       width: 1.4375rem;
@@ -1596,9 +1596,9 @@ button {
   fill: #5a5a5a; }
   .social__twit:hover {
     fill: white;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   @media screen and (max-width: 480px) {
     .social__twit {
       width: 1.4375rem;
@@ -1656,7 +1656,9 @@ button {
   top: 50%;
   margin-top: -2px; }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
   width: 30px;
   height: 4px;
   background-color: #fff;
@@ -1674,7 +1676,8 @@ button {
   -o-transition-timing-function: ease;
   transition-timing-function: ease; }
 
-.hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner::before,
+.hamburger-inner::after {
   content: "";
   display: block; }
 
@@ -1777,16 +1780,16 @@ button {
   display: flex;
   position: relative;
   will-change: right;
-  -webkit-transition: right .3s;
-  -o-transition: right .3s;
-  transition: right .3s; }
+  -webkit-transition: right 0.3s;
+  -o-transition: right 0.3s;
+  transition: right 0.3s; }
 
 .slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #fff;
-  font-family: 'gagalinregular';
+  font-family: "gagalinregular";
   min-width: 100%; }
   @media screen and (max-width: 768px) {
     .slider__item {
@@ -1851,7 +1854,7 @@ button {
       margin-top: 1.25rem; } }
 
 .content__text {
-  font-family: 'ubuntulight';
+  font-family: "ubuntulight";
   line-height: 1.7; }
   @media screen and (max-width: 480px) {
     .content__text {
@@ -1976,7 +1979,7 @@ button {
   position: relative;
   text-decoration: none; }
   .composition.active .composition__list {
-    opacity: .9;
+    opacity: 0.9;
     left: 5.625rem; }
   @media screen and (max-width: 768px) {
     .composition {
@@ -2009,12 +2012,12 @@ button {
   border-radius: 0.3125rem;
   color: #000;
   padding: 0.9375rem;
-  font-family: 'ubuntubold';
+  font-family: "ubuntubold";
   font-size: 0.875rem;
   width: 18.75rem;
-  -webkit-transition: opacity .4s;
-  -o-transition: opacity .4s;
-  transition: opacity .4s; }
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s; }
   @media screen and (max-width: 480px) {
     .composition__list {
       width: 10.5rem;

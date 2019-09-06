@@ -1,42 +1,42 @@
 .calories {
-    position: relative;
-    width: rem(90px);
-    height: rem(90px);
+  position: relative;
+  width: rem(90px);
+  height: rem(90px);
 
-    @include tablets {
-        margin-right: 10%;
-    }
+  @include tablets {
+    margin-right: 10%;
+  }
 
-    @include phones {
-        margin: 0 0 0 48%;
-    }
+  @include phones {
+    margin: 0 0 0 48%;
+  }
 }
 
 .calories__kkal {
-    width: rem(55px);
-    height: rem(55px);
-    margin-left: rem(10px);
+  width: rem(55px);
+  height: rem(55px);
+  margin-left: rem(10px);
 
-    @include phones {
-        margin-left: rem(30px);
-    }
+  @include phones {
+    margin-left: rem(30px);
+  }
 }
 
 .calories__number {
-    position: absolute;
-    top: rem(27px);
-    left: rem(21px);
-    font-size: rem(20px);
+  position: absolute;
+  top: rem(27px);
+  left: rem(21px);
+  font-size: rem(20px);
 
-    @include phones {
-        left: rem(42px);
-    }
+  @include phones {
+    left: rem(42px);
+  }
 }
 
 .calories__text {
-    margin-left: rem(20px);
+  margin-left: rem(20px);
 
-    @include phones {
-        margin-left: rem(42px);
-    }
+  @include phones {
+    margin-left: rem(42px);
+  }
 }

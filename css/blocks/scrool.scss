@@ -1,35 +1,35 @@
 .scrool {
-    width: rem(25px);
-    height: rem(55px);
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-    outline: none;
+  width: rem(25px);
+  height: rem(55px);
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  outline: none;
 }
 
 .scrool-left {
-    width: rem(25px);
-    height: rem(14px);
-    transform: rotate(90deg);
-    position: absolute;
-    left: rem(-40px);
+  width: rem(25px);
+  height: rem(14px);
+  transform: rotate(90deg);
+  position: absolute;
+  left: rem(-40px);
 
-    @include tablets {
-        left: rem(-5px);
-    }
+  @include tablets {
+    left: rem(-5px);
+  }
 }
 
 .scrool-right {
-    width: rem(25px);
-    height: rem(14px);
-    transform: rotate(270deg);
-    padding: 0;
-    position: absolute;
-    right: rem(-40px);
+  width: rem(25px);
+  height: rem(14px);
+  transform: rotate(270deg);
+  padding: 0;
+  position: absolute;
+  right: rem(-40px);
 
-    @include tablets {
-        right: rem(-5px);
-    }
+  @include tablets {
+    right: rem(-5px);
+  }
 }

@@ -1,39 +1,39 @@
 .price {
-    display: flex;
-    margin-top: rem(15px);
+  display: flex;
+  margin-top: rem(15px);
 
-    @include tablets {
-        justify-content: center;
-    }
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 .price__block {
-    display: flex;
-    color: $orange;
+  display: flex;
+  color: $orange;
 }
 
 .price__number {
-    font-size: rem(72px);
+  font-size: rem(72px);
 
-    @include phones {
-        font-size: rem(35px);
-    }
+  @include phones {
+    font-size: rem(35px);
+  }
 }
 
 .price__text {
-    font-size: rem(30px);
-    margin: rem(40px) 0 0 rem(5px);
-    
-    @include phones {
-        font-size: 15px;
-        margin: rem(20px) 0 0 rem(5px);
-    }
+  font-size: rem(30px);
+  margin: rem(40px) 0 0 rem(5px);
+
+  @include phones {
+    font-size: 15px;
+    margin: rem(20px) 0 0 rem(5px);
+  }
 }
 
 .price__btn {
-    margin: rem(40px) 0 0 rem(25px);
+  margin: rem(40px) 0 0 rem(25px);
 
-    @include phones {
-        margin: rem(7px) 0 0 rem(20px);
-    }
+  @include phones {
+    margin: rem(7px) 0 0 rem(20px);
+  }
 }
