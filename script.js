@@ -44,10 +44,9 @@ function slider() {
   const slide = document.querySelector(".slider__item");
 
   let minRight = 0;
+  let currentRight = 0;
   let step = slide.offsetWidth;
   let maxRight = (slides.length - 1) * slide.offsetWidth;
-  let currentRight = 0;
-
   slider.style.right = currentRight;
 
   function leftMove() {
@@ -168,28 +167,28 @@ order.addEventListener("click", function(event) {
     xhr.send(data);
     xhr.addEventListener("load", () => {
       if (xhr.response.status) {
-          const element = document.createElement("div");
-          formRow.appendChild(element);
-          element.classList.add("message__modal");
+        const element = document.createElement("div");
+        formRow.appendChild(element);
+        element.classList.add("message__modal");
 
-          const element2 = document.createElement("div");
-          element.appendChild(element2);
-          element2.classList.add("message__send");
+        const element2 = document.createElement("div");
+        element.appendChild(element2);
+        element2.classList.add("message__send");
 
-          const element3 = document.createElement("div");
-          element2.appendChild(element3);
-          element3.classList.add("message__text");
-          element3.textContent = "Сообщение отправлено";
+        const element3 = document.createElement("div");
+        element2.appendChild(element3);
+        element3.classList.add("message__text");
+        element3.textContent = "Сообщение отправлено";
 
-          const element4 = document.createElement("button");
-          element2.appendChild(element4);
-          element4.classList.add("btn");
-          element4.textContent = "Закрыть";
+        const element4 = document.createElement("button");
+        element2.appendChild(element4);
+        element4.classList.add("btn");
+        element4.textContent = "Закрыть";
 
-          element4.addEventListener("click", function() {
-            formRow.removeChild(element);
-          });
-        }
+        element4.addEventListener("click", function() {
+          formRow.removeChild(element);
+        });
+      }
       order.disabled = false;
     });
   }
@@ -207,7 +206,7 @@ function validateForm(form) {
     valid = false;
   }
   return valid;
-};
+}
 function validateField(field) {
   if (!field.checkValidity()) {
     field.nextElementSibling.textContent = field.validationMessage;
@@ -216,7 +215,27 @@ function validateField(field) {
     field.nextElementSibling.textContent = "";
     return true;
   }
-};
+}
 ///////////////////////////////////////////////////////////////////////////////////
 
-// Модальное окно ОТЗЫВЫ
+// ОТЗЫВЫ
+var modalRev = document.querySelector(".popup-reviews");
+var modalTitle = document.querySelector(".popup-reviews__title");
+var modalText = document.querySelector(".popup-reviews__text");
+const revList = document.querySelector(".reviews__list");
+const revClose = document.querySelector(".popup-reviews__close");
+revClose.addEventListener("click", function(e) {
+  e.preventDefault();
+  modalRev.style.display = "none";
+  document.body.style.overflow = "initial";
+});
+revList.addEventListener("click", function(e) {
+  e.preventDefault();
+  modalRev.style.display = "flex";
+  document.body.style.overflow = "hidden";
+  var target = e.target.closest("button");
+  modalTitle.innerText = target.parentNode.firstChild.nextSibling.textContent;
+  modalText.innerText = target.previousElementSibling.innerText;
+});
+///////////////////////////////////////////////////////////////////////////////
+
