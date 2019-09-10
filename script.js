@@ -81,13 +81,16 @@ function slider() {
 
 // Состав
 var compositionMenuButtons = document.querySelectorAll(".composition");
+var compositionClose = document.querySelector(".composition__close");
 
 function openCompositionMenu() {
   compositionMenu.classList.add("active");
 }
 
 function closeCompositionMenu() {
-  compositionMenu.classList.remove("active");
+  compositionClose.addEventListener("click", function() {
+    compositionMenu.classList.remove("active");
+  });
 }
 
 for (let i = 0; i < compositionMenuButtons.length; i++) {
@@ -221,7 +224,7 @@ function validateField(field) {
 // ОТЗЫВЫ
 var modalRev = document.querySelector(".popup-reviews");
 var modalTitle = document.querySelector(".popup-reviews__title");
-var reviews = document.querySelector('.reviews');
+var reviews = document.querySelector(".reviews");
 var modalText = document.querySelector(".popup-reviews__text");
 const revList = document.querySelector(".reviews__list");
 const revClose = document.querySelector(".popup-reviews__close");
@@ -240,4 +243,3 @@ revList.addEventListener("click", function(e) {
   modalText.innerText = target.previousElementSibling.innerText;
 });
 ///////////////////////////////////////////////////////////////////////////////
-
