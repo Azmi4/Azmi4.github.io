@@ -1385,15 +1385,14 @@ button {
       height: 100%;
       z-index: 1; } }
   .menu__item.menu-active .menu__text {
-    padding: 3.75rem 2.5rem;
+    max-width: 33.125rem;
     line-height: 1.7;
-    width: 100%;
-    -webkit-transition: width 0.4s;
-    -o-transition: width 0.4s;
-    transition: width 0.4s; }
+    width: 100%; }
     @media screen and (max-width: 480px) {
       .menu__item.menu-active .menu__text {
         width: 100%; } }
+    .menu__item.menu-active .menu__text .menu__text p {
+      padding: 3.75rem 2.5rem; }
 
 .menu__title {
   -webkit-writing-mode: vertical-lr;
@@ -1441,11 +1440,14 @@ button {
       font-size: 1.875rem; } }
 
 .menu__text {
-  width: 0;
+  max-width: 0;
   overflow: hidden;
   background: rgba(76, 78, 80, 0.8);
   font-family: "ubuntulight";
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  -webkit-transition: max-width 0.4s;
+  -o-transition: max-width 0.4s;
+  transition: max-width 0.4s; }
 
 .maps {
   background: url("../../image/bg/Layer 4.jpg") center center no-repeat/cover;
@@ -1838,7 +1840,7 @@ button {
   padding: 0;
   position: absolute;
   top: 50%;
-  width: 100%;
+  z-index: 1;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1851,7 +1853,7 @@ button {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   position: absolute;
-  left: -2.5rem; }
+  left: 0; }
   @media screen and (max-width: 768px) {
     .scrool-left {
       left: -0.3125rem; } }
@@ -1864,7 +1866,7 @@ button {
   transform: rotate(270deg);
   padding: 0;
   position: absolute;
-  right: -2.5rem; }
+  right: 0; }
   @media screen and (max-width: 768px) {
     .scrool-right {
       right: -0.3125rem; } }

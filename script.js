@@ -221,18 +221,20 @@ function validateField(field) {
 // ОТЗЫВЫ
 var modalRev = document.querySelector(".popup-reviews");
 var modalTitle = document.querySelector(".popup-reviews__title");
+var reviews = document.querySelector('.reviews');
 var modalText = document.querySelector(".popup-reviews__text");
 const revList = document.querySelector(".reviews__list");
 const revClose = document.querySelector(".popup-reviews__close");
+
 revClose.addEventListener("click", function(e) {
   e.preventDefault();
   modalRev.style.display = "none";
-  document.body.style.overflow = "initial";
+  reviews.style.overflow = "initial";
 });
 revList.addEventListener("click", function(e) {
   e.preventDefault();
   modalRev.style.display = "flex";
-  document.body.style.overflow = "hidden";
+  reviews.style.overflow = "hidden";
   var target = e.target.closest("button");
   modalTitle.innerText = target.parentNode.firstChild.nextSibling.textContent;
   modalText.innerText = target.previousElementSibling.innerText;

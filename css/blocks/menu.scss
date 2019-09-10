@@ -25,13 +25,17 @@
     }
 
     .menu__text {
-      padding: rem(60px) rem(40px);
+      max-width: rem(530px);
       line-height: 1.7;
       width: 100%;
-      transition: width 0.4s;
+
 
       @include phones {
         width: 100%;
+      }
+
+      .menu__text p {
+        padding: rem(60px) rem(40px);
       }
     }
   }
@@ -91,9 +95,10 @@
 }
 
 .menu__text {
-  width: 0;
+  max-width: 0;
   overflow: hidden;
   background: rgba(#4c4e50, 0.8);
   font-family: "ubuntulight";
   font-size: rem(14px);
+  transition: max-width 0.4s;
 }
