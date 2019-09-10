@@ -1846,6 +1846,12 @@ button {
   transform: translateY(-50%);
   outline: none; }
 
+.scrool__left {
+  left: -2.5rem; }
+
+.scrool__right {
+  right: -2.5rem; }
+
 .scrool-left {
   width: 1.5625rem;
   height: 0.875rem;

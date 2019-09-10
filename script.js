@@ -82,25 +82,24 @@ function slider() {
 // Состав
 var compositionMenuButtons = document.querySelectorAll(".composition");
 var compositionClose = document.querySelector(".composition__close");
+var sliderWrapper = document.querySelector("#slider");
 
-function openCompositionMenu() {
-  compositionMenu.classList.add("active");
+function openCompositionMenu(menu) {
+  menu.classList.add("active");
 }
 
-function closeCompositionMenu() {
-  compositionClose.addEventListener("click", function() {
-    compositionMenu.classList.remove("active");
-  });
+function closeCompositionMenu(menu) {
+  menu.classList.remove("active");
 }
 
 for (let i = 0; i < compositionMenuButtons.length; i++) {
   const compositionMenu = compositionMenuButtons[i];
   compositionMenu.addEventListener("click", function(e) {
     e.preventDefault();
-    if (compositionMenu.classList.toggle("active")) {
-      closeCompositionMenu();
+    if (compositionMenu.classList.contains("active")) {
+      closeCompositionMenu(compositionMenu);
     } else {
-      openCompositionMenu();
+      openCompositionMenu(compositionMenu);
     }
   });
 }

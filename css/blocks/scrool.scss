@@ -9,6 +9,14 @@
   outline: none;
 }
 
+.scrool__left {
+  left: rem(-40px);
+}
+
+.scrool__right {
+  right: rem(-40px);
+}
+
 .scrool-left {
   width: rem(25px);
   height: rem(14px);
