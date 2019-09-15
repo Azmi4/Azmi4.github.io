@@ -270,7 +270,7 @@ ymaps.ready(function() {
         // Необходимо указать данный тип макета.
         iconLayout: "default#image",
         // Своё изображение иконки метки.
-        iconImageHref: "images/myIcon.gif",
+        iconImageHref: "./image/map-marker.png",
         // Размеры метки.
         iconImageSize: [30, 42],
         // Смещение левого верхнего угла иконки относительно
@@ -290,7 +290,7 @@ ymaps.ready(function() {
         // Необходимо указать данный тип макета.
         iconLayout: "default#imageWithContent",
         // Своё изображение иконки метки.
-        iconImageHref: "images/ball.png",
+        iconImageHref: "./image/map-marker.png",
         // Размеры метки.
         iconImageSize: [48, 48],
         // Смещение левого верхнего угла иконки относительно
@@ -302,7 +302,7 @@ ymaps.ready(function() {
         iconContentLayout: MyIconContentLayout
       }
     );
-      myMap.behaviors.disable("scrollZoom");
+      
   myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
 });
 ///////////////////////////////////////////////////////////////////////////////
