@@ -301,9 +301,8 @@ ymaps.ready(function() {
         // Макет содержимого.
         iconContentLayout: MyIconContentLayout
       }
-      myMap.behaviors.disable("scrollZoom");
     );
-
+      myMap.behaviors.disable("scrollZoom");
   myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
 });
 ///////////////////////////////////////////////////////////////////////////////
