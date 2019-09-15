@@ -58,6 +58,10 @@ body {
       padding-bottom: 5%;
     }
   }
+
+  &__player {
+    justify-content: flex-start;
+  }
 }
 
 h1,

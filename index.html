@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Burgers</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<3f19c850-6faa-49ed-acdb-83ae909d5e39>&lang=ru_RU"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7
+            });
+        }
+    </script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -795,6 +806,16 @@
             </div>
         </section>
 
+        <section class="section video">
+            <div class="container container__player">
+                <h1 class="title title_color_black title__player">Как мы работаем</h1>
+                <div class="player__wrapper">
+                    <video src="./video/лучшая Бургерная VS домашние бургеры _ 3 способа приготовить бургеры.mp4"
+                        class="player__video" poster="./image/posterplayer.png"></video>
+                </div>
+            </div>
+        </section>
+
         <section class="section order">
             <div class="container container_order">
                 <h2 class="title title__order title_centered">Закажите доставку</h2>
@@ -877,7 +898,7 @@
         </section>
 
         <section class="section maps">
-
+            <div id="map"></div>
         </section>
 
         <footer class="footer">
@@ -961,8 +982,8 @@
         </ul>
     </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

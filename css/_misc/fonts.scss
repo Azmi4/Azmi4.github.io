@@ -1,4 +1,15 @@
 @font-face {
+  font-family: "ckin";
+  src: url("../../fonts/ckin.eot?g02cfx");
+  src: url("../../fonts/ckin.eot?g02cfx#iefix") format("embedded-opentype"),
+    url("../../fonts/ckin.ttf?g02cfx") format("truetype"),
+    url("../../fonts/ckin.woff?g02cfx") format("woff"),
+    url("../../fonts/ckin.svg?g02cfx#ckin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "gagalinregular";
   src: url("../../fonts/gagalin-regular-webfont.woff2") format("woff2"),
     url("../../fonts/gagalin-regular-webfont.woff") format("woff");
