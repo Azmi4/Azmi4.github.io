@@ -249,7 +249,9 @@ ymaps.ready(function() {
       "map",
       {
         center: [55.751574, 37.573856],
-        zoom: 9
+        zoom: 12
+        // controls: ['zoomControl'],
+        // behaviors: ['drag']
       },
       {
         searchControlProvider: "yandex#search"
