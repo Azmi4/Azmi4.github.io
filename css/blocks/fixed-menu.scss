@@ -24,6 +24,8 @@
   border: rem(1px) solid transparent;
   margin-top: rem(3px);
   position: relative;
+  outline: none;
+  display: block;
 
   &:hover {
     width: rem(16px);

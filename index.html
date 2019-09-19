@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Burgers</title>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=<3f19c850-6faa-49ed-acdb-83ae909d5e39>&lang=ru_RU"
-        type="text/javascript"></script>
-    <script src="icon_customImage.js" type="text/javascript"></script>
     <script type="text/javascript">
-        ymaps.ready(init);
-        function init() {
-            var myMap = new ymaps.Map("map", {
-                center: [55.76, 37.64],
-                zoom: 7
-            });
-        }
+        // ymaps.ready(init);
+        // function init() {
+        //     var myMap = new ymaps.Map("map", {
+        //         center: [55.76, 37.64],
+        //         zoom: 7
+        //     });
+        // }
     </script>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -24,8 +21,8 @@
 <body>
     <div class="wrapper">
 
-        <div class="maincontent">
-            <section class="section section_non-centered hero">
+        <div class="maincontent" id="fullpage">
+            <section class="section section_non-centered hero" data-anchor="slider__burger">
                 <div class="container hero__container">
                     <header class="header">
                         <svg class="header__logo">
@@ -35,25 +32,25 @@
                             <nav class="nav animated fadeIn" id="hamburgerMenu">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">О нас</a>
+                                        <a href="#slider__best" class="nav__link">О нас</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Бургеры</a>
+                                        <a href="#slider__burger" class="nav__link">Бургеры</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Команда</a>
+                                        <a href="#slider__team" class="nav__link">Команда</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Меню</a>
+                                        <a href="#slider__menu" class="nav__link">Меню</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Отзывы</a>
+                                        <a href="#slider__reviews" class="nav__link">Отзывы</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Как мы работаем</a>
+                                        <a href="#slider__workspace" class="nav__link">Как мы работаем</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Контакты</a>
+                                        <a href="# slider__contacts" class="nav__link">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -81,8 +78,8 @@
                     </svg>
                 </button>
             </section>
-    
-            <section class="section best">
+
+            <section class="section best" data-anchor="slider__best">
                 <div class="container container_best">
                     <h2 class="title best__title title_color_black title_centered">Мы лучшие</h2>
                     <ul class="best__list">
@@ -94,7 +91,8 @@
                                 <div class="best__subtitle">100% Свежее мясо</div>
                                 <div class="best__desc-text">
                                     <p>
-                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                                        Ямб
                                         неравномерен.
                                     </p>
                                 </div>
@@ -130,8 +128,8 @@
                     </ul>
                 </div>
             </section>
-    
-            <section class="section slider">
+
+            <section class="section slider" data-anchor="slider__burgerslide">
                 <div class="container">
                     <button type="button" class="scrool scrool__left">
                         <svg class="scrool-left">
@@ -188,7 +186,8 @@
                                                 <li class="composition__item">
                                                     <div class="composition__min-block">
                                                         <svg class="composition__cucumber">
-                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cucumber"></use>
+                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cucumber">
+                                                            </use>
                                                         </svg>
                                                         <div class="composition__text">Овощи</div>
                                                     </div>
@@ -197,7 +196,8 @@
                                                 <li class="composition__item">
                                                     <div class="composition__min-block">
                                                         <svg class="composition__cheese">
-                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cheese"></use>
+                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cheese">
+                                                            </use>
                                                         </svg>
                                                         <div class="composition__text">Сыр</div>
                                                     </div>
@@ -287,7 +287,8 @@
                                                 <li class="composition__item">
                                                     <div class="composition__min-block">
                                                         <svg class="composition__cucumber">
-                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cucumber"></use>
+                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cucumber">
+                                                            </use>
                                                         </svg>
                                                         <div class="composition__text">Овощи</div>
                                                     </div>
@@ -296,7 +297,8 @@
                                                 <li class="composition__item">
                                                     <div class="composition__min-block">
                                                         <svg class="composition__cheese">
-                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cheese"></use>
+                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cheese">
+                                                            </use>
                                                         </svg>
                                                         <div class="composition__text">Сыр</div>
                                                     </div>
@@ -387,7 +389,8 @@
                                                 <li class="composition__item">
                                                     <div class="composition__min-block">
                                                         <svg class="composition__cucumber">
-                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cucumber"></use>
+                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cucumber">
+                                                            </use>
                                                         </svg>
                                                         <div class="composition__text">Овощи</div>
                                                     </div>
@@ -396,7 +399,8 @@
                                                 <li class="composition__item">
                                                     <div class="composition__min-block">
                                                         <svg class="composition__cheese">
-                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cheese"></use>
+                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cheese">
+                                                            </use>
                                                         </svg>
                                                         <div class="composition__text">Сыр</div>
                                                     </div>
@@ -487,7 +491,8 @@
                                                 <li class="composition__item">
                                                     <div class="composition__min-block">
                                                         <svg class="composition__cucumber">
-                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cucumber"></use>
+                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cucumber">
+                                                            </use>
                                                         </svg>
                                                         <div class="composition__text">Овощи</div>
                                                     </div>
@@ -496,7 +501,8 @@
                                                 <li class="composition__item">
                                                     <div class="composition__min-block">
                                                         <svg class="composition__cheese">
-                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cheese"></use>
+                                                            <use xlink:href="./image/svg-sprite/sprite.svg#cheese">
+                                                            </use>
                                                         </svg>
                                                         <div class="composition__text">Сыр</div>
                                                     </div>
@@ -548,8 +554,8 @@
                     </button>
                 </div>
             </section>
-    
-            <section class="section team">
+
+            <section class="section team" data-anchor="slider__team">
                 <div class="right__team">
                     <div class="team__block">
                         <h2 class="title title_team">Команда</h2>
@@ -579,7 +585,8 @@
                             <li class="accordeon__item">
                                 <div class="accordeon__title">Джейк Финн</div>
                                 <div class="accordeon__block">
-                                    <div class="accordeon__photo" style="background-image: url('image/photo1.jpg')"></div>
+                                    <div class="accordeon__photo" style="background-image: url('image/photo1.jpg')">
+                                    </div>
                                     <div class="accordeon__desc">
                                         <div class="accordeon__subtitle">Оператор</div>
                                         <div class="accordeon__text">С радостью поможет подобрать идеальный бургер и
@@ -590,7 +597,8 @@
                             <li class="accordeon__item">
                                 <div class="accordeon__title">Николай Иванов</div>
                                 <div class="accordeon__block">
-                                    <div class="accordeon__photo" style="background-image: url('image/photo1.jpg')"></div>
+                                    <div class="accordeon__photo" style="background-image: url('image/photo1.jpg')">
+                                    </div>
                                     <div class="accordeon__desc">
                                         <div class="accordeon__subtitle">Оператор</div>
                                         <div class="accordeon__text">С радостью поможет подобрать идеальный бургер и
@@ -602,8 +610,8 @@
                     </div>
                 </div>
             </section>
-    
-            <section class="section section_non-centered menu">
+
+            <section class="section section_non-centered menu" data-anchor="slider__menu">
                 <h2 class="title title__menu title_color_white">Меню</h2>
                 <ul class="accordeon_menu">
                     <li class="menu__item">
@@ -612,17 +620,22 @@
                         </a>
                         <div class="menu__text">
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error pariatur placeat fugit sunt
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error pariatur placeat fugit
+                                sunt
                                 odit obcaecati
-                                explicabo, optio molestiae eos asperiores praesentium delectus quod necessitatibus commodi
+                                explicabo, optio molestiae eos asperiores praesentium delectus quod necessitatibus
+                                commodi
                                 maxime! Incidunt
-                                sit temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+                                sit temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Similique,
                                 sequi! Animi ut
-                                nesciunt officia aliquam totam quos! Iure, fuga. Amet porro fuga voluptate ab consequatur
+                                nesciunt officia aliquam totam quos! Iure, fuga. Amet porro fuga voluptate ab
+                                consequatur
                                 ad, esse voluptas
                                 pariatur optio? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aut
                                 quibusdam beatae fugit
-                                exercitationem deserunt laboriosam cupiditate, accusantium vitae cumque a expedita in atque
+                                exercitationem deserunt laboriosam cupiditate, accusantium vitae cumque a expedita in
+                                atque
                                 dicta molestias
                                 laudantium earum doloremque suscipit.
                             </p>
@@ -634,17 +647,22 @@
                         </a>
                         <div class="menu__text">
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error pariatur placeat fugit sunt
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error pariatur placeat fugit
+                                sunt
                                 odit obcaecati
-                                explicabo, optio molestiae eos asperiores praesentium delectus quod necessitatibus commodi
+                                explicabo, optio molestiae eos asperiores praesentium delectus quod necessitatibus
+                                commodi
                                 maxime! Incidunt
-                                sit temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+                                sit temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Similique,
                                 sequi! Animi ut
-                                nesciunt officia aliquam totam quos! Iure, fuga. Amet porro fuga voluptate ab consequatur
+                                nesciunt officia aliquam totam quos! Iure, fuga. Amet porro fuga voluptate ab
+                                consequatur
                                 ad, esse voluptas
                                 pariatur optio? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aut
                                 quibusdam beatae fugit
-                                exercitationem deserunt laboriosam cupiditate, accusantium vitae cumque a expedita in atque
+                                exercitationem deserunt laboriosam cupiditate, accusantium vitae cumque a expedita in
+                                atque
                                 dicta molestias
                                 laudantium earum doloremque suscipit.
                             </p>
@@ -656,17 +674,22 @@
                         </a>
                         <div class="menu__text">
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error pariatur placeat fugit sunt
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error pariatur placeat fugit
+                                sunt
                                 odit obcaecati
-                                explicabo, optio molestiae eos asperiores praesentium delectus quod necessitatibus commodi
+                                explicabo, optio molestiae eos asperiores praesentium delectus quod necessitatibus
+                                commodi
                                 maxime! Incidunt
-                                sit temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+                                sit temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Similique,
                                 sequi! Animi ut
-                                nesciunt officia aliquam totam quos! Iure, fuga. Amet porro fuga voluptate ab consequatur
+                                nesciunt officia aliquam totam quos! Iure, fuga. Amet porro fuga voluptate ab
+                                consequatur
                                 ad, esse voluptas
                                 pariatur optio? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aut
                                 quibusdam beatae fugit
-                                exercitationem deserunt laboriosam cupiditate, accusantium vitae cumque a expedita in atque
+                                exercitationem deserunt laboriosam cupiditate, accusantium vitae cumque a expedita in
+                                atque
                                 dicta molestias
                                 laudantium earum doloremque suscipit.
                             </p>
@@ -674,8 +697,8 @@
                     </li>
                 </ul>
             </section>
-    
-            <section class="section reviews">
+
+            <section class="section reviews" data-anchor="slider__reviews">
                 <ul class="reviews__list">
                     <li class="reviews__item">
                         <img src="./image/pic-one.jpg" alt="" class="reviews__img">
@@ -798,17 +821,9 @@
                         </div>
                     </li>
                 </ul>
-                <div class="popup-reviews">
-                    <div class="popup-reviews__content">
-                        <div class="popup-reviews__title"></div>
-                        <div class="popup-reviews__text"></div>
-                        <button class="popup-reviews__close">
-                        </button>
-                    </div>
-                </div>
             </section>
-    
-            <section class="section video">
+
+            <section class="section video" data-anchor="slider__video">
                 <div class="container container__player">
                     <h1 class="title title_color_black title__player">Как мы работаем</h1>
                     <div class="player__wrapper">
@@ -817,8 +832,8 @@
                     </div>
                 </div>
             </section>
-    
-            <section class="section order">
+
+            <section class="section order" data-anchor="slider__order">
                 <div class="container container_order">
                     <h2 class="title title__order title_centered">Закажите доставку</h2>
                     <div class="form">
@@ -832,8 +847,8 @@
                                     </label>
                                     <label class="form__block">
                                         <div class="form__block-title">Телефон</div>
-                                        <input type="text" class="form__input" placeholder="8 999-99-99-999" name="phone"
-                                            required>
+                                        <input type="text" class="form__input" placeholder="8 999-99-99-999"
+                                            name="phone" required>
                                         <div class="div"></div>
                                     </label>
                                 </div>
@@ -898,95 +913,106 @@
                     </div>
                 </div>
             </section>
-    
-            <section class="section maps">
+
+            <section class="section maps" data-anchor="slider__contacts">
                 <div id="map"></div>
-            </section>
-    
-            <footer class="footer">
-                <div class="container">
-                    <div class="contacts">
-                        <div class="contacts__mine">
-                            <address class="contacts__address">Санкт-Петербург,ул.Бабушкина,д.12/1, 15</address>
-                            <div class="contacts__phone">
-                                <a href="tel:+78123771377" class="contacts__phone-link">
-                                    <svg class="contacts__phone-icon">
-                                        <use xlink:href="./image/svg-sprite/sprite.svg#phone"></use>
-                                    </svg>
-                                    +7 (812) 377-13-77
-                                </a>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="contacts">
+                            <div class="contacts__mine">
+                                <address class="contacts__address">Санкт-Петербург,ул.Бабушкина,д.12/1, 15</address>
+                                <div class="contacts__phone">
+                                    <a href="tel:+78123771377" class="contacts__phone-link">
+                                        <svg class="contacts__phone-icon">
+                                            <use xlink:href="./image/svg-sprite/sprite.svg#phone"></use>
+                                        </svg>
+                                        +7 (812) 377-13-77
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="social__networks">
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a href="https://vk.com/a3imet">
+                                            <svg class="social__vk">
+                                                <use xlink:href="./image/svg-sprite/sprite.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#">
+                                            <svg class="social__fb">
+                                                <use xlink:href="./image/svg-sprite/sprite.svg#fb"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#">
+                                            <svg class="social__inst">
+                                                <use xlink:href="./image/svg-sprite/sprite.svg#inst"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#">
+                                            <svg class="social__twit">
+                                                <use xlink:href="./image/svg-sprite/sprite.svg#twit"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="social__networks">
-                            <ul class="social__list">
-                                <li class="social__item">
-                                    <a href="https://vk.com/a3imet">
-                                        <svg class="social__vk">
-                                            <use xlink:href="./image/svg-sprite/sprite.svg#vk"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a href="#">
-                                        <svg class="social__fb">
-                                            <use xlink:href="./image/svg-sprite/sprite.svg#fb"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a href="#">
-                                        <svg class="social__inst">
-                                            <use xlink:href="./image/svg-sprite/sprite.svg#inst"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a href="#">
-                                        <svg class="social__twit">
-                                            <use xlink:href="./image/svg-sprite/sprite.svg#twit"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
-            </footer>
-    
-            <ul class="fixed-menu">
-                <li class="fixed-menu__item fixed-menu__item_active">
-                    <button class="fixed-menu__dot" type="button"></button>
-                </li>
-                <li class="fixed-menu__item">
-                    <button class="fixed-menu__dot" type="button"></button>
-                </li>
-                <li class="fixed-menu__item">
-                    <button class="fixed-menu__dot" type="button"></button>
-                </li>
-                <li class="fixed-menu__item">
-                    <button class="fixed-menu__dot" type="button"></button>
-                </li>
-                <li class="fixed-menu__item">
-                    <button class="fixed-menu__dot" type="button"></button>
-                </li>
-                <li class="fixed-menu__item">
-                    <button class="fixed-menu__dot" type="button"></button>
-                </li>
-                <li class="fixed-menu__item">
-                    <button class="fixed-menu__dot" type="button"></button>
-                </li>
-                <li class="fixed-menu__item">
-                    <button class="fixed-menu__dot" type="button"></button>
-                </li>
-                <li class="fixed-menu__item">
-                    <button class="fixed-menu__dot" type="button"></button>
-                </li>
-            </ul>
+                </footer>
+            </section>
         </div>
+
+        <div class="popup-reviews">
+            <div class="popup-reviews__content">
+                <div class="popup-reviews__title"></div>
+                <div class="popup-reviews__text"></div>
+                <button class="popup-reviews__close">
+                </button>
+            </div>
+        </div>
+
+        <ul class="fixed-menu" id="myMenu">
+            <li class="fixed-menu__item fixed-menu__item_active" data-menuanchor="slider__burger">
+                <a href="#slider__burger" class="fixed-menu__dot"></a>
+            </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__best">
+                <a href="#slider__best" class="fixed-menu__dot"></a>
+            </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__burgerslide">
+                <a href="#slider__burgerslide" class="fixed-menu__dot"></a>
+            </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__team">
+                <a href="#slider__team" class="fixed-menu__dot"></a>
+            </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__menu">
+                <a href="#slider__menu" class="fixed-menu__dot"></a>
+            </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__reviews">
+                <a href="#slider__reviews" class="fixed-menu__dot"></a>
+            </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__video">
+                <a href="#slider__video" class="fixed-menu__dot"></a>
+            </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__order">
+                <a href="#slider__order" class="fixed-menu__dot"></a>
+            </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__contacts">
+                <a href="#slider__contacts" class="fixed-menu__dot"></a>
+            </li>
+        </ul>
 
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<3f19c850-6faa-49ed-acdb-83ae909d5e39>&lang=ru_RU"
+        type="text/javascript"></script>
+    <script src="./fullpage.js"></script>
     <script src="./script.js"></script>
 </body>
 

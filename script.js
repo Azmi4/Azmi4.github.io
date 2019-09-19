@@ -249,9 +249,8 @@ ymaps.ready(function() {
       "map",
       {
         center: [55.751574, 37.573856],
-        zoom: 12
-        // controls: ['zoomControl'],
-        // behaviors: ['drag']
+        zoom: 12,
+        behaviors: ["drag"]
       },
       {
         searchControlProvider: "yandex#search"
@@ -304,8 +303,11 @@ ymaps.ready(function() {
         iconContentLayout: MyIconContentLayout
       }
     );
-      
+
   myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
+  $("#fullpage").fullpage({
+    menu: "#myMenu"
+  });
 });
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -752,3 +754,4 @@ function addListenerMulti(element, eventNames, listener) {
     element.addEventListener(events[i], listener, false);
   }
 }
+
