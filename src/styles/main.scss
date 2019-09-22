@@ -1,0 +1,14 @@
+// colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$grey: #5a5a5a;
+
+// setups
+@import "_misc/fonts";
+@import "_misc/media";
+@import "_misc/layout";
+
+
+// blocks
+@import "blocks/*.scss";
