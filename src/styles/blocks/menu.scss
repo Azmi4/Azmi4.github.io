@@ -1,5 +1,5 @@
 .menu {
-  background: url("../../image/bg/Rectangle\ 4.jpg") center center no-repeat /
+  background: url("../image/bg/Rectangle\ 4.jpg") center center no-repeat /
     cover;
   position: relative;
   color: #fff;
@@ -71,17 +71,17 @@
   }
 
   &_one {
-    background: url("../../image/bg/photo-one.jpg") center center no-repeat /
+    background: url("../image/bg/photo-one.jpg") center center no-repeat /
       cover;
   }
 
   &_two {
-    background: url("../../image/bg/photo-two.jpg") right center no-repeat /
+    background: url("../image/bg/photo-two.jpg") right center no-repeat /
       cover;
   }
 
   &_three {
-    background: url("../../image/bg/photo-thee.jpg") right center no-repeat /
+    background: url("../image/bg/photo-thee.jpg") right center no-repeat /
       cover;
   }
 }
